@@ -6,10 +6,10 @@ Deng Wanting 3035637888
 
 2. A description of your game and introduce the game rules.
 
-Description:
+(1). Description:
 Our project is going to implement a Life Simulation. In this game, players can determine the role’s life by making choices. From family to career, from entertainment to life long learning, players can live a unique life in every turn.
 
-Game rule:
+(2). Game rule:
 -Phase 0: Players can choose the name and gender for the role {we could generate two pictures for each gender so players can choose the outlook}
 
 -Phase 1 Baby (0 years old-6 years old)
