@@ -28,88 +28,143 @@ Watching TV (Curiosity += 10)
 
 Reading (intelligence += 5-10)
 
+
 -Phase 2 Primary School (6 years old - 12 years old) Going to the kindergarten 
+
 [One action/year]
+
 Cultivating a hobby (such as singing, dancing, etc.) (Artistic sense += 5)
+
 Playing with other children (social skills += 5-10)
+
 Reading (intelligence += 5-10)
 
 -Phase 3 Junior High School & High School (12 years old - 18 years old) 
+
 [One action/year]
+
 Studying (academic performance += 15-20)
+
 Reading (intelligence += 10-15)
+
 Writing (Artistic sense += 10)
+
 Playing with classmates (social skills += 5-10)
 
 -Phase 4(18 years old - 22 years old) 
+
 If Academic performance >= 100 -> Top University (IBGM/MBBS)
+
 If Academic performance >= 80 -> Top University (Social Science/Arts/Science)
+
 If Academic performance >= 50 -> Normal University
+
 If Academic performance <50 -> Directly turn Phase 5
 
 [Twice actions/year]
+
 Studying (Academic performance +=10-20)
+
 Internship (Competitiveness +=10)
+
 Competition (Competitiveness +=5, Intelligence += 10)
+
 Joining activities (Social Skills += 10-15）
 
 -Phase 5 (22 years old-）
+
 Ga(Career)
+
 If Academic performance >= 200 && intelligence >= 60 -> Ph.D
+
 If Academic performance >= 150 && intelligence >= 40 -> MA
+
 If Social Skills >=50 -> Insurance Sales
+
 If Social Skills >=50 && Competitiveness >=40 && Academic performance >=160-> Investment banking front office
+
 If intelligence >=50 && Academic performance >=100 -> Programming
+
 If Curiosity =10 && intelligence >=40 -> Online Game Design
+
 …
+
 Else: choose from
+
 Waiter/Waitress
+
 Artist
+
 Writer
+
 …
+
 The following activities will be generated from 22 years old to 60 years old
 
 (Family) [A potential partner can be met randomly, i.e. Probability 0.2 every year]
+
 -> Dating [RANDOM jobs and they would say random words when dating]
+
 -> Getting married 
+
 -> Children [RANDOM jobs]
 
 (Job)
 -> Work
+
 -> Being promoted
+
 -> Gain Money
 
 (Money usage)
+
 -> Entertainment
+
 -> Shopping
 
 (Life long study)
+
 -> Ph.D
+
 -> Second degree
 
 END
+
 Players are able to view their achievements, career, name of partner
+
 i.e.Values will be turned into text based achievements
 
 
 3. Features:
+
 Appearance of the role
+
 -(5) Images are stored in different files
+
 -(1) Random images
 
 Game menu
+
 Save (Saving the game status):
+
 -(2) Data Structure for storing game status
+
 -(3) Dynamic memory allocation
+
 -(4) Outputting the data of game status to files
 
 Load (Loading the game):
+
 -(4) Inputting the data of game status from files
 
 Restart (Clearing the character’s status and restarting the game):
+
 -(2) The data structure of game status being changed
 
 Activities
+
 -(5) Random events may occur (such as finding the partner)
+
 -(5) Players will gain random values in some actions
+
 -(2) Changes in value will be recorded in data structure
