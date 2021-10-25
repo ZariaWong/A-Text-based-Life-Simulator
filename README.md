@@ -1,22 +1,31 @@
 # Proposal
 
 1. Team members:
+
 Wong Zee Meng 3035787188
+
 Deng Wanting 3035637888
 
 2. A description of your game and introduce the game rules.
 
 (1). Description:
+
 Our project is going to implement a Life Simulation. In this game, players can determine the role’s life by making choices. From family to career, from entertainment to life long learning, players can live a unique life in every turn.
 
 (2). Game rule:
+
 -Phase 0: Players can choose the name and gender for the role {we could generate two pictures for each gender so players can choose the outlook}
 
 -Phase 1 Baby (0 years old-6 years old)
+
 Players may have these series of actions
+
 [One action/year]
+
 Playing with other children (social skills += 5-10)
+
 Watching TV (Curiosity += 10)
+
 Reading (intelligence += 5-10)
 
 -Phase 2 Primary School (6 years old - 12 years old) Going to the kindergarten 
