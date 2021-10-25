@@ -1,10 +1,10 @@
 # Proposal
 
-Team members:
+1. Team members:
 Wong Zee Meng 3035787188
 Deng Wanting 3035637888
 
-A description of your game and introduce the game rules.
+2. A description of your game and introduce the game rules.
 
 Description:
 Our project is going to implement a Life Simulation. In this game, players can determine the role’s life by making choices. From family to career, from entertainment to life long learning, players can live a unique life in every turn.
@@ -32,7 +32,7 @@ Reading (intelligence += 10-15)
 Writing (Artistic sense += 10)
 Playing with classmates (social skills += 5-10)
 
-            -Phase 4(18 years old - 22 years old) 
+-Phase 4(18 years old - 22 years old) 
 If Academic performance >= 100 -> Top University (IBGM/MBBS)
 If Academic performance >= 80 -> Top University (Social Science/Arts/Science)
 If Academic performance >= 50 -> Normal University
