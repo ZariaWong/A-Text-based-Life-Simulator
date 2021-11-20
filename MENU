@@ -31,10 +31,10 @@ void DrawMenu()					//print the menu
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t |                      Exit                          |\n");
 		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t |                                                    |\n");
+		printf("\t\t\t\t |                      Restart                       |\n");
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆\n");
-		printf("\t\t\t\t                                         ");
+		printf("\t\t\t\t                                 Designer: Zaria, Wadi");
 		}
 }
 
@@ -63,7 +63,7 @@ void Chioce(int &x)
 		}
 		else if ((temp == ' ') && (n == '1'))
 		{
-			x = 2;				//进入游戏
+			x = 2;				//load the game
 			return;
 		}
 		else if ((temp == ' ') && (n == '2'))
