@@ -1,3 +1,4 @@
+//Menu.h
 #pragma once
 #include <iostream>
 #include <windows.h>
@@ -29,9 +30,9 @@ void DrawMenu()					//print the menu
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t |                      Save                          |\n");
 		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t |                      Exit                          |\n");
-		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t |                      Restart                       |\n");
+		printf("\t\t\t\t |                                                    |\n");
+		printf("\t\t\t\t |                      Exit                          |\n");
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆\n");
 		printf("\t\t\t\t                                 Designer: Zaria, Wadi");
@@ -73,7 +74,7 @@ void Chioce(int &x)
 	}
 	switch (n)
 	{
-	case '1':					//选择标识在选择‘1’
+	case '1':					//slect cursor points to ‘Start’
 		Pos(52, 9);
 		cout << "●";
 		Pos(52, 11);
@@ -83,7 +84,7 @@ void Chioce(int &x)
 		Pos(52, 15);
 		cout << "  ";
 		break;
-	case '2':					//选择标识在选择‘2’
+	case '2':					//slect cursor points to ‘Save’
 		Pos(52, 9);
 		cout << "  ";
 		Pos(52, 11);
@@ -93,7 +94,7 @@ void Chioce(int &x)
 		Pos(52, 15);
 		cout << "  ";
 		break;
-	case '3':					//选择标识在选择‘3’
+	case '3':					//slect cursor points to ‘Restart’
 		Pos(52, 9);
 		cout << "  ";
 		Pos(52, 11);
@@ -103,7 +104,7 @@ void Chioce(int &x)
 		Pos(52, 15);
 		cout << "  ";
 		break;
-	case '4':					//选择标识在选择‘4’
+	case '4':					//slect cursor points to ‘Exit’
 		Pos(52, 9);
 		cout << "  ";
 		Pos(52, 11);
