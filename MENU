@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "MENU" << endl;
+  cout << "Please enter the command: SAVE LOAD RESTART"; << endl;  
+  string command;
+  cin >> command;
+  if (command = "SAVE"){
+  
+  }
+  
+  if (command = "LOAD"){
+  
+  }
+  
+  if (command = "RESTART"){
+  
+  }
+  
+  else{
+    cout << "Error command."
+  }
+}
