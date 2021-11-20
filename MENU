@@ -44,7 +44,7 @@ void Chioce(int &x)
 	static char n = '1';
 	if (_kbhit())
 	{
-		char temp = _getch();	//临时变量储存键盘输入的值
+		char temp = _getch();	//temporary variable stores the entered value
 		if ((n == '1') && (temp == 'w'))
 		{
 			n = '1';			//选择‘1’的时候不能在往上翻
@@ -86,6 +86,6 @@ void Chioce(int &x)
 		cout << "●";
 		break;
 	}
-	Sleep(10);				//设置间隔以免看出闪烁
+	Sleep(10);				//set the interval to avoid flickering
 }
 ————————————————
