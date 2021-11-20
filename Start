@@ -147,7 +147,7 @@ if (Social Skills >=50 && Competitiveness >=40 && Academic performance >=160){
 cout << "Investment banking front office" << endl}
 if (intelligence >=50 && Academic performance >=100){
 cout <<"Programming" <<endl;}
-if (Curiosity =10 && intelligence >=40)
+if (Curiosity =10 && intelligence >=40){
 cout <<"Online Game Design" <<endl;}
 
 cout <<"Waiter/Waitress"<<endl;
