@@ -1,2 +1,52 @@
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 using namespace std;
+
+int Social_skills = 0, Curiosity = 0, Intelligence = 0,Artistic_sense = 0; Academic_performance = 0, Competitiveness = 0;
+
+int random(int min, int y){
+  srand(time(NULL));
+  // generate a random int within [min, max]
+  int random = rand()%(max-min+1)+min;
+  return ramdom;
+}
+
+Void Playing_with_friends (int & Social_skills){
+  social_skills += random(5, 10);
+}
+
+Void Watching_TV(int & Curiosity){
+  Curiosity += 10;
+}
+
+Void Reading (int & Intelligence){
+  Intelligence += random(5, 10);
+}
+
+Void Cultivating_hobbies (int & Artistic_sense){
+  Artistic_sense += 10;
+}
+
+Void Studying (int & Academic_performance){
+  Academic_performance += random(15, 20);
+}
+
+Void Writing (int & Artistic_sense) {
+  Artistic_sense += 10;
+}
+
+Void Internship (int & Competitiveness){
+  Competitiveness += random(10, 15);
+}
+
+Void Competition (int & Competitiveness, int & Intelligence){
+  Competitiveness += random(5, 10);
+  Intelligence += random(5, 10);
+}
+
+Joining activities (int & Social_skills, int & Artistic_sense){
+  Social_skills += random(10, 15);
+  Artistic_sense += random(5, 10);
+}
