@@ -22,7 +22,7 @@ void DrawMenu()					//print the menu
 		{
 			printf("\n");
 		}
-		printf("\t\t\t\t☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆\n");
+		printf("\t\t\t\t ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆\n");
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t |                  Life Simulation                   |\n");
 		printf("\t\t\t\t |                                                    |\n");
@@ -34,7 +34,7 @@ void DrawMenu()					//print the menu
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t |                      Exit                          |\n");
 		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆\n");
+		printf("\t\t\t\t ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆\n");
 		printf("\t\t\t\t                                 Designer: Zaria, Wadi");
 		}
 }
