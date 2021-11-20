@@ -22,14 +22,13 @@ cout <<"Now, lets look at the faces:";
 char images;
 images="4"
 for ( images!=1 | images !=2 | images!=3 ){
-  
-
-
-image1();
+  image1();
   image2();
   image3()
   cout << "Please choose your face!"
   cin >> images;}
+ // Phase 5
+ 
 
 
 void image1(){
@@ -133,5 +132,31 @@ if (wordings==3){
 "You want a son or a daughther?"}
 if (wordings==4){
 "I would like to go Hawaii in our honeymoon!"}
+}
+
+void Career(){
+string yourjob;
+cout << "Please choose from the following jobs/further studies"<<endl;
+if (Academic performance >= 200 && intelligence >= 60){
+cout << "Ph.D" <<endl;}
+if (Academic performance >= 150 && intelligence >= 40){
+cout << "MA" << endl;}
+if (Social Skills >=50){
+cout << "Insurance Sales" <<endl}
+if (Social Skills >=50 && Competitiveness >=40 && Academic performance >=160){
+cout << "Investment banking front office" << endl}
+if (intelligence >=50 && Academic performance >=100){
+cout <<"Programming" <<endl;}
+if (Curiosity =10 && intelligence >=40)
+cout <<"Online Game Design" <<endl;}
+
+cout <<"Waiter/Waitress"<<endl;
+cout <<"Artist"<<endl;
+cout <<"Writer"<<endl;
+cout <<"Journalist"<<endl;
+cout <<"Circus performers"<<endl;
+
+cout << "Please type the job you would like to choose:"<<endl;
+cin >> yourjob;
 }
 
