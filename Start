@@ -1,0 +1,137 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+int ages;
+ages=0
+
+int main{
+cout << "Welcome to Life Simulation！" << endl;
+cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn.!";
+cout << "If you would like to call the menu, save or load the game, please type MENU and enter.";
+cout << "Now, please choose a name for yourself.";
+string Name;
+cin >> Name;
+cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M.";
+string gender;
+cin >> gender;
+for (gender != "F" | gender != "M"){
+ cout << "Choose Female by typing F. Choose Male by typing M.";
+ cin >> gender;}
+cout <<"Now, lets look at the faces:";
+char images;
+images="4"
+for ( images!=1 | images !=2 | images!=3 ){
+  
+
+
+image1();
+  image2();
+  image3()
+  cout << "Please choose your face!"
+  cin >> images;}
+
+
+void image1(){
+cout << "1"<<endl;
+cout << "HHHHHHHHHHHH"<<endl;
+cout << "HH O HH O HH"<<endl;
+cout << "HH   II   HH"<<endl;
+cout << "HH   ..   HH"<<endl;
+cout << "HH        HH"<<endl;
+}
+
+void image2(){
+cout << "2"<<endl;
+cout << "VVVVVVVVVVVV"<<endl;
+cout << "VV VV VV VVV"<<endl;
+cout << "VV 0 VV 0 VV"<<endl;
+cout << "VV   @    VV"<<endl;
+cout << "VVV      VVV"<<endl;
+}
+
+void image3(){
+cout << "3"<<endl;
+cout << "-----~------"<<endl;
+cout << "---$---$----"<<endl;
+cout << "   --^--    "<<endl;
+cout << "    -V-     "<<endl;
+cout << "     -      "<<endl;
+}
+
+void Femalepartner(Name){
+int word = (int) rand() / (RAND_MAX+5);
+string partnername;
+if (word==0){
+partnername="Peter";}
+if (word==1){
+partnername="Leo";}
+if (word==2){
+partnername="Jacky";}
+if (word==3){
+partnername="William";}
+if (word==4){
+partnername="Harry";}
+
+int job = (int) rand() / (RAND_MAX+5);
+string job;
+if (word==0){
+job="Nurse.";}
+if (word==1){
+job="Software engineer.";}
+if (word==2){
+job="Lawyer.";}
+if (word==3){
+job="Flight attendant.";}
+if (word==4){
+job="Writer.";}
+
+cout << "Hi" << Name << ", I am " << partnername << endl;
+cout << "I am a " << job <<endl;
+cout << "I love you! Please be my girlfriend!"
+}
+
+void Malepartner(Name){
+if (word==0){
+partnername="Lily";}
+if (word==1){
+partnername="Amy";}
+if (word==2){
+partnername="Snow";}
+if (word==3){
+partnername="Macy";}
+if (word==4){
+partnername="Ana";}
+}
+
+int job = (int) rand() / (RAND_MAX+5);
+string job;
+if (word==0){
+job="Doctor.";}
+if (word==1){
+job="Civil engineer.";}
+if (word==2){
+job="Lawyer.";}
+if (word==3){
+job="Pilot.";}
+if (word==4){
+job="Writer.";}
+
+cout << "Hi" << Name << ", I am " << partnername << endl;
+cout << "I am a " << job <<endl;
+cout << "Would you like to be my boyfriend?"
+}
+
+void Date(){
+if (wordings==0){
+"Let's go to cinema!"}
+if (wordings==1){
+"I love you so much! Honey~"}
+if (wordings==2){
+"I have booked this restaurant, let's go together."}
+if (wordings==3){
+"You want a son or a daughther?"}
+if (wordings==4){
+"I would like to go Hawaii in our honeymoon!"}
+}
+
