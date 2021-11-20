@@ -74,15 +74,43 @@ void Chioce(int &x)
 	switch (n)
 	{
 	case '1':					//选择标识在选择‘1’
-		Pos(52, 10);
+		Pos(52, 9);
 		cout << "●";
+		Pos(52, 11);
+		cout << "  ";
 		Pos(52, 13);
+		cout << "  ";
+		Pos(52, 15);
 		cout << "  ";
 		break;
 	case '2':					//选择标识在选择‘2’
-		Pos(52, 10);
+		Pos(52, 9);
+		cout << "  ";
+		Pos(52, 11);
+		cout << "●";
+		Pos(52, 13);
+		cout << "  ";
+		Pos(52, 15);
+		cout << "  ";
+		break;
+	case '3':					//选择标识在选择‘3’
+		Pos(52, 9);
+		cout << "  ";
+		Pos(52, 11);
 		cout << "  ";
 		Pos(52, 13);
+		cout << "●";
+		Pos(52, 15);
+		cout << "  ";
+		break;
+	case '4':					//选择标识在选择‘4’
+		Pos(52, 9);
+		cout << "  ";
+		Pos(52, 11);
+		cout << "  ";
+		Pos(52, 13);
+		cout << "  ";
+		Pos(52, 15);
 		cout << "●";
 		break;
 	}
