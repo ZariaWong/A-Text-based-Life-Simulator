@@ -2,7 +2,7 @@
 #include <string>
 #include <cstdlib>
 using namespace std;
-int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0;
+int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, fchild=0;mchild=0;
 
 time_t now = time(0);
 char* dt = ctime(&now);
@@ -94,9 +94,12 @@ cout << "You can only form families before 40,"<<endl;
 cout << "and you will end your life at 65."<<endl;
 cout << "Treasure your time and start your life!"<<endl;
 for (ages=22;ages<66;ages++){
- if Gender=="F"{
+int rannn = (int) rand() / (RAND_MAX+5);
+ if (Gender=="F"){
+ if (rannn==3)
  Femalepartner(Name)}
- if Gender=="F"{
+ if Gender=="M"{
+ if (rannn==3)
  Malepartner(Name)}
  cout << "You are now " << ages;
  char action;
@@ -185,24 +188,34 @@ for (ages=22;ages<66;ages++){
  if (action=="Family"){
   char familyaction;
   familyaction="lalala"
-  for (familyaction!="Author"| familyaction!="Travellor"| familyaction!="Photographer"){
+  for (familyaction!="Parents"| familyaction!="Partner"| familyaction!="Children/Child"){
    cout << "You can commit one of the following actions"<<endl;
-   cout << "Author"<<endl;
-   cout << "Travellor"<<endl;
-   cout << "Photographer"<<endl;
+   cout << "Parents"<<endl;
+   if (Partner==1){
+   cout << "Partner"<<endl;}
+   if (Child>=1){
+   cout << "Children/Child"<<endl;}
    cout << "Please type your action:"<<endl;
    cin >> familyaction;}
-   if (familyaction=="Author"){
-   cout << "You find out that you becomes more creative." <<endl;
-   Artistic_sense+=3;
-   Curiosity+=3}
-   if (parttimeaction=="Photographer"){
-   cout << "You find out that you have better artistic sense." <<endl;
-   Artistic_sense+=5;}
-   if (parttimeaction=="Sales"){
-   cout << "You go to the bar with the clients. You find out that you are more familiar with socializing." <<endl;
-   Social_skills +=5;}}
- 
+   if (familyaction=="Parents"){
+   cout << "You love spending time with your mum and dad." <<endl;}
+   if (familyaction=="Partner"){
+   cout << "Let's have a child together!" <<endl;
+   int rannd = (int) rand() / (RAND_MAX+8);
+   if (rannd == 3){
+   fchild +=1;
+   cout << "Congradualations! You get a baby girl!"}
+   if (rannd ==4){
+   mchild +=1;
+   cout << "Congradualations! You get a baby boy!"}}
+   if (familyaction=="Children/Child"){
+   cout << "You enjoy great time with your kids!" <<endl;}
+   }
+   }
+   cout << "You are now 65 years old."<<endl;
+   cout <<" You have came to the end of your life."<<endl;
+   cout << "Hope that you all get a fruitful life"<<endl;
+   cout << "Welcome to start the game again to gain another life!"<<endl;
 }
 
 void image1(){
@@ -267,6 +280,8 @@ YESNO="NIL";
 for (YESNO!="Yes"| YESNO!="No"){
   cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
   cin >> YESNO;}
+if (YESNO=="Yes"){
+Partner+=1}
 }
 
 void Malepartner(Name){
@@ -303,6 +318,8 @@ YESNO="NIL";
 for (YESNO!="Yes"| YESNO!="No"){
   cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
   cin >> YESNO;}
+if (YESNO=="Yes"){
+Partner+=1}
 }
 
 void Date(){
