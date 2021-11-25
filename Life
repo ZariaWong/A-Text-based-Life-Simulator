@@ -13,50 +13,70 @@ int random(int min, int y){
   return ramdom;
 }
 
-Void Playing_with_friends (int & Social_skills){
+Void Playing_with_friends (){
   social_skills += random(5, 10);
 }
 
-Void Watching_TV(int & Curiosity){
+Void Watching_TV(){
   Curiosity += 10;
 }
 
-Void Reading (int & Intelligence, int &Academic_performance){
+Void Reading (){
   Intelligence += random(5, 10);
   Academic_performance += random(5, 10);
 }
 
-Void Cultivating_hobbies (int & Artistic_sense){
+Void Cultivating_hobbies (){
   Artistic_sense += 10;
 }
 
-Void Playing_computer (int &Academic_performance){
+Void Playing_computer (){
   Academic_performance -= random(5, 10);
 }
 
-Void Studying (int & Academic_performance){
+Void Studying (){
   Academic_performance += random(15, 20);
 }
 
-Void Writing (int & Artistic_sense) {
+Void Writing () {
   Artistic_sense += 10;
+  
 }
 
-Void Internship (int & Competitiveness){
+Void Internship (){
   Competitiveness += random(10, 15);
 }
 
-Void Competition (int & Competitiveness, int & Intelligence){
+Void Competition (){
   Competitiveness += random(5, 10);
   Intelligence += random(5, 10);
 }
 
-Void Joining activities (int & Social_skills, int & Artistic_sense){
+Void Joining activities (){
   Social_skills += random(10, 15);
   Artistic_sense += random(5, 10);
 }
 
 
 Void phase3(){
+  cout >> " " >> endl;
+  cout << "You are " << i << " years old now! You may choose an activities as an extracurricular activities." << endl;
+  cout << "Studying" << endl;
+  cout << "Cultivating a hobby" << endl;
+  cout << "Playing with friends" << endl;
+  cout << "Reading" << endl;
+  cout << "Writing" << endl;
+  cin << activity;
+  if (activity == "Cultivating a hobby"){
+  Cultivating_hobbies(Artistic_sense)}
+  if (activity == "Watching TV"){
+  Watching_TV(Curiosity)}
+  if (activity == "Reading"){
+  Reading(Intelligence, Academic_performance)}
+  if (activity == "Playing computer games"){
+  Playing_computer(Academic_performance)}
+  else{
+  cout << "Please choose the given activities." << endl;}
+}
   
 }
