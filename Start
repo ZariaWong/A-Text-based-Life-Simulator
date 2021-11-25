@@ -12,11 +12,11 @@ cout << "If you would like to call the menu, save or load the game, please type 
 cout << "Now, please choose a name for yourself." << endl;
 string Name;
 cin >> Name;
-cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M.";
+cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M." << endl;
 string gender;
 cin >> gender;
 for (gender != "F" | gender != "M"){
- cout << "Choose Female by typing F. Choose Male by typing M.";
+ cout << "Choose Female by typing F. Choose Male by typing M." << endl;
  cin >> gender;}
 cout <<"Now, lets look at the faces:";
 char images;
@@ -25,7 +25,7 @@ for ( images!=1 | images !=2 | images!=3 ){
   image1();
   image2();
   image3()
-  cout << "Please choose your face!"
+  cout << "Please choose your face!" << endl;
   cin >> images;}
  // Phase 5
  
