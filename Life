@@ -46,7 +46,7 @@ Void Competition (int & Competitiveness, int & Intelligence){
   Intelligence += random(5, 10);
 }
 
-Joining activities (int & Social_skills, int & Artistic_sense){
+Void Joining activities (int & Social_skills, int & Artistic_sense){
   Social_skills += random(10, 15);
   Artistic_sense += random(5, 10);
 }
