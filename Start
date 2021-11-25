@@ -26,10 +26,8 @@ cout << "Reading" << endl;
 cin << activity;
 if (activity == "Playing with other children"){
 Playing_with_friends(Social_skills)}
-if (acativity == "Watching TV"){
 if (activity == "Watching TV"){
 Watching_TV(Curiosity)}
-if (acativity == "Reading"){
 if (activity == "Reading"){
 Reading(Intelligence)}
 else{
