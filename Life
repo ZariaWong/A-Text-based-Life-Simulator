@@ -19,6 +19,7 @@ Void Playing_with_friends (){
 
 Void Watching_TV(){
   Curiosity += 10;
+  Academic_performance -= random(0-5);
 }
 
 Void Reading (){
@@ -58,8 +59,9 @@ Void Joining activities (){
 }
 
 Void bad_performance(){
-  cout << "
-  cout << "Your parents are unhappy and 
+  cout << "Your grades drop due to indugling in entertainment."
+  cout << "Your parents are unhappy and forbid you to play computer games or watch TV." << endl;
+  cout << "(You are not allowed to choose these two option in the next round)";
 }
 
 Void phase3(){
