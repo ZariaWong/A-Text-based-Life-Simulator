@@ -21,12 +21,17 @@ Void Watching_TV(int & Curiosity){
   Curiosity += 10;
 }
 
-Void Reading (int & Intelligence){
+Void Reading (int & Intelligence, int &Academic_performance){
   Intelligence += random(5, 10);
+  Academic_performance += random(5, 10);
 }
 
 Void Cultivating_hobbies (int & Artistic_sense){
   Artistic_sense += 10;
+}
+
+Void Playing_computer (int &Academic_performance){
+  Academic_performance -= random(5, 10);
 }
 
 Void Studying (int & Academic_performance){
