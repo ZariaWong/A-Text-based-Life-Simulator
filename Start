@@ -52,7 +52,6 @@ Void phase2(){
    cout << "Playing with friends" << endl;
    cout << "Reading" << endl;
   }
-  cout << "Playing computer games" << endl;
   cin << activity;
   if (activity == "Cultivating a hobby"){
    Cultivating_hobbies();
