@@ -1,70 +1,14 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
-#include <ctime>
 using namespace std;
 int ages;
 ages=0
 int partner=0;
 int age=22;
-
-void phase1(int &Social_skills, int &Curiosity, int &Intelligence){
- //birth time
- time_t now = time(0);
- char* dt = ctime(&now);
- cout << "In " << dt << ", you are born." << endl;
- // choosing activities
- cout << "In the process of growing up, you can participate in various activities." << endl;
- cout << "Please note that there is only one chance per year to choose from the following activities:" << endl;
- cout << "Playing with other children" << endl;
- cout << "Watching TV" << endl;
- cout << "Reading" << endl;
- string activity;
- for (int i=1; i<=6; i++){
- cout << "You are " << i << " years old now! You may choose an activities to enrich life." << endl;
- cout << "Playing with other children" << endl;
- cout << "Watching TV" << endl;
- cout << "Reading" << endl;
- cin << activity;
- if (activity == "Playing with other children"){
- Playing_with_friends(Social_skills)}
- if (activity == "Watching TV"){
- Watching_TV(Curiosity)}
- if (activity == "Reading"){
- Reading(Intelligence)}
- else{
- cout << "Please choose the given activities." << endl;}
-}
-
-Void phase2(){
-cout << "You are now at the age of going for the primary school." << endl;
-for (int i=7; i<=12; i++){
-cout << "You are " << i << " years old now! You may choose an activities as an extracurricular activities." << endl;
-cout << "Cultivating a hobby" << endl;
-cout << "Playing with friends" << endl;
-cout << "Watching TV" << endl;
-cout << "Reading" << endl;
-cout << "Playing computer games" << endl;
-cin << activity;
-if (activity == "Cultivating a hobby"){
-Cultivating_hobbies(Artistic_sense)}
- if (activity == "Watching TV"){
-Watching_TV(Curiosity)}
-if (activity == "Reading"){
-Reading(Intelligence, Academic_performance)}
-if (activity == "Playing computer games"){
-Playing_computer(Academic_performance)}
-else{
-cout << "Please choose the given activities." << endl;}}
-
-}
-
-Void phase3(){
-}
-
+int Cooking_sense=0;
 
 int main{
-int Social_skills = 0, Curiosity = 0, Intrlligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0;
 cout << "Welcome to Life Simulation！" << endl;
 cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn.!";
 cout << "If you would like to call the menu, save or load the game, please type MENU and enter.";
@@ -88,8 +32,7 @@ for ( images!=1 | images !=2 | images!=3 ){
   cin >> images;}
 }
  
-
-
+ 
 void phase5(){
 cout << "Happy Graduation!!!"<<endl;
 cout << "Now, you could determine your future career path."<<endl;
@@ -102,9 +45,117 @@ cout << "You may meet your partner randomly every year,"<<endl;
 cout << "remember that time is limited in this game."<<endl;
 cout << "You can only form families before 40,"<<endl;
 cout << "and you will end your life at 65."<<endl;
-cout << "Treasure your time and start your life!"
+cout << "Treasure your time and start your life!"<<endl;
 for (ages=22;ages<66;ages++){
-}
+ if Gender=="F"{
+ Femalepartner(Name)}
+ if Gender=="F"{
+ Malepartner(Name)}
+ cout << "You are now " << ages;
+ char action;
+ action="lalala"
+ for (action!="Entertainment"| action!="Part time"| action!="Family"|action!="Interest classes" ){
+   cout << "You can commit one of the following actions"<<endl;
+   cout << "Entertainment"<<endl;
+   cout << "Part time"<<endl;
+   cout << "Family"<<endl;
+   cout << "Interest classes"<<endl;
+   cout << "Please type your action:"<<endl;
+   cin >> action;}
+ if (action=="Entertainment"){
+  char entertainmentaction;
+  entertainmentaction="lalala"
+  for (entertainmentaction!="Cinema"| entertainmentaction!="Library"| entertainmentaction!="Room excape"|entertainmentaction!="Theme park" ){
+   cout << "You can commit one of the following actions"<<endl;
+   cout << "Cinema"<<endl;
+   cout << "Library"<<endl;
+   cout << "Room excape"<<endl;
+   cout << "Theme park"<<endl;
+   cout << "Please type your action:"<<endl;
+   cin >> entertainmentaction;}
+   if (entertainmentaction=="Cinema"){
+   cout << "You enjoy a very great film and feel relaxed" <<endl;
+   Artistic_sense+=5;}
+   if (entertainmentaction=="Library"){
+   cout << "You learn much today" <<endl;
+   Intelligence+=5;}
+   if (entertainmentaction=="Room excape"){
+   cout << "You feel really curious in designing a room escape game on your own!" <<endl;
+   Curiosity+=5;}
+   if (entertainmentaction=="Theme park"){
+   cout << "It is really exciting, and you enjoy a really great time with you friend in Ocean park." <<endl;
+   Social_skills +=5;}}
+ if (action=="Part time"){
+  char parttimeaction;
+  parttimeaction="lalala"
+  for (parttimeaction!="Author"| parttimeaction!="Travellor"| parttimeaction!="Photographer"|parttimeaction!="Sales" ){
+   cout << "You can commit one of the following actions"<<endl;
+   cout << "Author"<<endl;
+   cout << "Travellor"<<endl;
+   cout << "Photographer"<<endl;
+   cout << "Sales"<<endl;
+   cout << "Please type your action:"<<endl;
+   cin >> parttimeaction;}
+   if (parttimeaction=="Author"){
+   cout << "You find out that you becomes more creative." <<endl;
+   Artistic_sense+=3;
+   Curiosity+=3}
+   if (parttimeaction=="Photographer"){
+   cout << "You find out that you have better artistic sense." <<endl;
+   Artistic_sense+=5;}
+   if (parttimeaction=="Travellor"){
+   cout << "You feel really curious in exploring more about the world." <<endl;
+   Curiosity+=5;}
+   if (parttimeaction=="Sales"){
+   cout << "You go to the bar with the clients. You find out that you are more familiar with socializing." <<endl;
+   Social_skills +=5;}}
+   
+ if (action=="Interest classes"){
+  char interestaction;
+  interestaction="lalala"
+  for (interestaction!="Programming"| interestaction!="Cooking"| interestaction!="Creative writing"|interestaction!="Ceramics" ){
+   cout << "You can commit one of the following actions"<<endl;
+   cout << "Programming"<<endl;
+   cout << "Ceramics"<<endl;
+   cout << "Cooking"<<endl;
+   cout << "Creative writing"<<endl;
+   cout << "Please type your action:"<<endl;
+   cin >> interestaction;}
+   if (interestaction=="Ceramics"){
+   cout << "You love the mug that you have made." <<endl;
+   Artistic_sense+=5;
+   Curiosity+=3}
+   if (interestaction=="Cooking"){
+   cout << "You have tried your own speghetti. It tastes great!" <<endl;
+   Cooking_sense+=5;}
+   if (interestaction=="Programming"){
+   cout << "You become more and more familiar with c++." <<endl;
+   Intelligence+=5;}
+   if (interestaction=="Creative writing"){
+   cout << "You have more and more ideas in writing." <<endl;
+   Curiosity+=10;}}
+   
+ if (action=="Family"){
+  char familyaction;
+  familyaction="lalala"
+  for (familyaction!="Author"| familyaction!="Travellor"| familyaction!="Photographer"){
+   cout << "You can commit one of the following actions"<<endl;
+   cout << "Author"<<endl;
+   cout << "Travellor"<<endl;
+   cout << "Photographer"<<endl;
+   cout << "Please type your action:"<<endl;
+   cin >> familyaction;}
+   if (familyaction=="Author"){
+   cout << "You find out that you becomes more creative." <<endl;
+   Artistic_sense+=3;
+   Curiosity+=3}
+   if (parttimeaction=="Photographer"){
+   cout << "You find out that you have better artistic sense." <<endl;
+   Artistic_sense+=5;}
+   if (parttimeaction=="Sales"){
+   cout << "You go to the bar with the clients. You find out that you are more familiar with socializing." <<endl;
+   Social_skills +=5;}}
+ 
 }
 
 void image1(){
@@ -164,6 +215,11 @@ job="Writer.";}
 cout << "Hi" << Name << ", I am " << partnername << endl;
 cout << "I am a " << job <<endl;
 cout << "I love you! Please be my girlfriend!"
+char YESNO;
+YESNO="NIL";
+for (YESNO!="Yes"| YESNO!="No"){
+  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
+  cin >> YESNO;}
 }
 
 void Malepartner(Name){
@@ -195,6 +251,11 @@ job="Writer.";}
 cout << "Hi" << Name << ", I am " << partnername << endl;
 cout << "I am a " << job <<endl;
 cout << "Would you like to be my boyfriend?"
+char YESNO;
+YESNO="NIL";
+for (YESNO!="Yes"| YESNO!="No"){
+  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
+  cin >> YESNO;}
 }
 
 void Date(){
