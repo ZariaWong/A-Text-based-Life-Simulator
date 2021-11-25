@@ -33,6 +33,7 @@ Void Cultivating_hobbies (){
 
 Void Playing_computer (){
   Academic_performance -= random(5, 10);
+  Intelligence += random(0, 5);
 }
 
 Void Studying (){
