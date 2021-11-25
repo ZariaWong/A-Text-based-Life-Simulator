@@ -59,7 +59,7 @@ Void Joining activities (){
 
 Void bad_performance(){
   cout << "
-  cout << "Your parents are not happy and 
+  cout << "Your parents are unhappy and 
 }
 
 Void phase3(){
