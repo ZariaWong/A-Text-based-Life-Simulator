@@ -15,19 +15,19 @@ cout << "Watching TV" << endl;
 cout << "Reading" << endl;
 string activity;
 for (int i=1; i<=6; i++){
-cout << "You are " << i << " years old now! Please choose an activities to enrich life." << endl;
-cout << "Playing with other children" << endl;
-cout << "Watching TV" << endl;
-cout << "Reading" << endl;
-cin << activity;
-if (activity == "Playing with other children"){
-Playing_with_friends(Social_skills)}
-if (activity == "Watching TV"){
-Watching_TV(Curiosity)}
-if (activity == "Reading"){
-Reading(Intelligence)}
-else{
-cout << "Please choose the given activities." << endl;}
+ cout << "You are " << i << " years old now! Please choose an activities to enrich life." << endl;
+ cout << "Playing with other children" << endl;
+ cout << "Watching TV" << endl;
+ cout << "Reading" << endl;
+ cin << activity;
+ if (activity == "Playing with other children"){
+ Playing_with_friends(Social_skills)}
+ if (activity == "Watching TV"){
+ Watching_TV(Curiosity)}
+ if (activity == "Reading"){
+ Reading(Intelligence)}
+ else{
+ cout << "Please choose the given activities." << endl;}
 }
 
 Void phase2(){
