@@ -7,9 +7,9 @@ ages=0
 
 int main{
 cout << "Welcome to Life Simulation！" << endl;
-cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn.!";
-cout << "If you would like to call the menu, save or load the game, please type MENU and enter.";
-cout << "Now, please choose a name for yourself.";
+cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn!" << endl;
+cout << "If you would like to call the menu, save or load the game, please type MENU and enter." << endl;
+cout << "Now, please choose a name for yourself." << endl;
 string Name;
 cin >> Name;
 cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M.";
