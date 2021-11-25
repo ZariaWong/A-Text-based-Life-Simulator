@@ -13,6 +13,7 @@ void phase1(int &Social_skills, int &Curiosity, int &Intelligence){
 time_t now = time(0);
 char* dt = ctime(&now);
 cout << "In " << dt << ", you are born." << endl;
+// choosing activities
 cout << "In the process of growing up, you can participate in various activities." << endl;
 cout << "Please note that there is only one chance per year to choose from the following activities:" << endl;
 cout << "Playing with other children" << endl;
@@ -20,18 +21,45 @@ cout << "Watching TV" << endl;
 cout << "Reading" << endl;
 string activity;
 for (int i=1; i<=6; i++){
-cout << "You are " << i << " years old now! Please choose an activities to enrich life." << endl;
+cout << "You are " << i << " years old now! You may choose an activities to enrich life." << endl;
+cout << "Playing with other children" << endl;
+cout << "Watching TV" << endl;
+cout << "Reading" << endl;
 cin << activity;
 if (activity == "Playing with other children"){
 Playing_with_friends(Social_skills)}
-if (acativity == "Watching TV"){
+if (activity == "Watching TV"){
 Watching_TV(Curiosity)}
-if (acativity == "Reading"){
+if (activity == "Reading"){
 Reading(Intelligence)}
 else{
 cout << "Please choose the given activities." << endl;}
 }
 
+Void phase2(){
+cout << "You are now at the age of going for the primary school." << endl;
+for (int i=7; i<=12; i++){
+cout << "You are " << i << " years old now! You may choose an activities as an extracurricular activities." << endl;
+cout << "Cultivating a hobby" << endl;
+cout << "Playing with friends" << endl;
+cout << "Watching TV" << endl;
+cout << "Reading" << endl;
+cout << "Playing computer games" << endl;
+cin << activity;
+if (activity == "Cultivating a hobby"){
+Cultivating_hobbies(Artistic_sense)}
+if (activity == "Watching TV"){
+Watching_TV(Curiosity)}
+if (activity == "Reading"){
+Reading(Intelligence, Academic_performance)}
+if (activity == "Playing computer games"){
+Playing_computer(Academic_performance)}
+else{
+cout << "Please choose the given activities." << endl;}
+}
+
+Void phase3(){
+}
 
 
 int main{
