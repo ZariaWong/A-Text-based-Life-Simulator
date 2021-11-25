@@ -2,11 +2,7 @@
 #include <string>
 #include <cstdlib>
 using namespace std;
-int ages;
-ages=0
-int partner=0;
-int age=22;
-int Cooking_sense=0;
+int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0;
 
 time_t now = time(0);
 char* dt = ctime(&now);
