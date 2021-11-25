@@ -67,7 +67,7 @@ Void bad_performance(){
 
 Void phase3(){
   cout >> " " >> endl;
-  cout << "You are " << i << " years old now! You may choose an activities as an extracurricular activities." << endl;
+  cout << "You are " << i << " years old now! You may choose the activities as an extracurricular activities." << endl;
   cout << "Studying" << endl;
   cout << "Cultivating a hobby" << endl;
   cout << "Playing with friends" << endl;
