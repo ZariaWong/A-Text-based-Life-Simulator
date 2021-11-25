@@ -9,31 +9,31 @@ int partner=0;
 int age=22;
 
 void phase1(int &Social_skills, int &Curiosity, int &Intelligence){
-//birth time
-time_t now = time(0);
-char* dt = ctime(&now);
-cout << "In " << dt << ", you are born." << endl;
-// choosing activities
-cout << "In the process of growing up, you can participate in various activities." << endl;
-cout << "Please note that there is only one chance per year to choose from the following activities:" << endl;
-cout << "Playing with other children" << endl;
-cout << "Watching TV" << endl;
-cout << "Reading" << endl;
-string activity;
-for (int i=1; i<=6; i++){
-cout << "You are " << i << " years old now! You may choose an activities to enrich life." << endl;
-cout << "Playing with other children" << endl;
-cout << "Watching TV" << endl;
-cout << "Reading" << endl;
-cin << activity;
-if (activity == "Playing with other children"){
-Playing_with_friends(Social_skills)}
-if (activity == "Watching TV"){
-Watching_TV(Curiosity)}
-if (activity == "Reading"){
-Reading(Intelligence)}
-else{
-cout << "Please choose the given activities." << endl;}
+ //birth time
+ time_t now = time(0);
+ char* dt = ctime(&now);
+ cout << "In " << dt << ", you are born." << endl;
+ // choosing activities
+ cout << "In the process of growing up, you can participate in various activities." << endl;
+ cout << "Please note that there is only one chance per year to choose from the following activities:" << endl;
+ cout << "Playing with other children" << endl;
+ cout << "Watching TV" << endl;
+ cout << "Reading" << endl;
+ string activity;
+ for (int i=1; i<=6; i++){
+ cout << "You are " << i << " years old now! You may choose an activities to enrich life." << endl;
+ cout << "Playing with other children" << endl;
+ cout << "Watching TV" << endl;
+ cout << "Reading" << endl;
+ cin << activity;
+ if (activity == "Playing with other children"){
+ Playing_with_friends(Social_skills)}
+ if (activity == "Watching TV"){
+ Watching_TV(Curiosity)}
+ if (activity == "Reading"){
+ Reading(Intelligence)}
+ else{
+ cout << "Please choose the given activities." << endl;}
 }
 
 Void phase2(){
