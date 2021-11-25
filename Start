@@ -48,14 +48,15 @@ cout << "Playing computer games" << endl;
 cin << activity;
 if (activity == "Cultivating a hobby"){
 Cultivating_hobbies(Artistic_sense)}
-if (activity == "Watching TV"){
+ if (activity == "Watching TV"){
 Watching_TV(Curiosity)}
 if (activity == "Reading"){
 Reading(Intelligence, Academic_performance)}
 if (activity == "Playing computer games"){
 Playing_computer(Academic_performance)}
 else{
-cout << "Please choose the given activities." << endl;}
+cout << "Please choose the given activities." << endl;}}
+
 }
 
 Void phase3(){
