@@ -57,6 +57,10 @@ Void Joining activities (){
   Artistic_sense += random(5, 10);
 }
 
+Void bad_performance(){
+  cout << "
+  cout << "Your parents are not happy and 
+}
 
 Void phase3(){
   cout >> " " >> endl;
