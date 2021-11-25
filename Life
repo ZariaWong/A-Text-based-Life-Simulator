@@ -55,3 +55,8 @@ Void Joining activities (int & Social_skills, int & Artistic_sense){
   Social_skills += random(10, 15);
   Artistic_sense += random(5, 10);
 }
+
+
+Void phase3(){
+  
+}
