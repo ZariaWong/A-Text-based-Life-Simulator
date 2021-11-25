@@ -44,9 +44,24 @@ cout << "You may meet your partner randomly every year,"<<endl;
 cout << "remember that time is limited in this game."<<endl;
 cout << "You can only form families before 40,"<<endl;
 cout << "and you will end your life at 65."<<endl;
-cout << "Treasure your time and start your life!"
+cout << "Treasure your time and start your life!"<<endl;
 for (ages=22;ages<66;ages++){
-}
+ if Gender=="F"{
+ Femalepartner(Name)}
+ if Gender=="F"{
+ Malepartner(Name)}
+ cout << "You are now " << ages;
+ char action;
+ action="lalala"
+ for (action!="Entertainment"| action!="Part time"| action!="Family"| action!="Get a new job"|action!="Interest classes" ){
+   cout << "You can commit one of the following actions"<<endl;
+   cout << "Entertainment"<<endl;
+   cout << "Part time"<<endl;
+   cout << "Family"<<endl;
+   cout << "Get a new job"<<endl;
+   cout << "Interest classes"<<endl;
+   cout << "Please type your action:"<<endl;
+   cin >> action;}
 }
 
 void image1(){
@@ -106,6 +121,11 @@ job="Writer.";}
 cout << "Hi" << Name << ", I am " << partnername << endl;
 cout << "I am a " << job <<endl;
 cout << "I love you! Please be my girlfriend!"
+char YESNO;
+YESNO="NIL";
+for (YESNO!="Yes"| YESNO!="No"){
+  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
+  cin >> YESNO;}
 }
 
 void Malepartner(Name){
@@ -137,6 +157,11 @@ job="Writer.";}
 cout << "Hi" << Name << ", I am " << partnername << endl;
 cout << "I am a " << job <<endl;
 cout << "Would you like to be my boyfriend?"
+char YESNO;
+YESNO="NIL";
+for (YESNO!="Yes"| YESNO!="No"){
+  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
+  cin >> YESNO;}
 }
 
 void Date(){
