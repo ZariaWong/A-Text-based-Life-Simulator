@@ -12,7 +12,7 @@ time_t now = time(0);
 char* dt = ctime(&now);
 cout << "In " << dt << ", you are born." << endl;
 // choosing activities
-cout << "In the process of growing up, you can participate in various activities." << endl;
+cout << "In the process of growing up, you may participate in various activities." << endl;
 cout << "Please note that there is only one chance per year to choose from the following activities:" << endl;
 cout << "Playing with other children" << endl;
 cout << "Watching TV" << endl;
