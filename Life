@@ -65,7 +65,7 @@ Void bad_performance(){
   cout << "(You are not allowed to choose these two option in the next round)";
 }
 
-Void phase3(){
+Void phase4(){
   cout << "
   if (Academic_performance >= 100){
     cout << "Top University (IBGM/MBBS) << endl;
