@@ -68,69 +68,53 @@ Void bad_performance(){
 Void phase3(){
   cout >> " " >> endl;
   for (int i=13; i<=18 i++){
-  cout << "You are " << i << " years old now! You may choose the activities as an extracurricular activities." << endl;
-  if (Academic_performance >= -10){
-  cout << "Studying" << endl;
-  cout << "Cultivating a hobby" << endl;
-  cout << "Playing with friends" << endl;
-  cout << "Reading" << endl;
-  cout << "Writing" << endl;
-  cout << "Watching TV" << endl;
-  cout << "Playing computer games" << endl;
+    cout << "You are " << i << " years old now! You may choose following activities as an extracurricular activities." << endl;
+    if (Academic_performance >= -10){
+      cout << "Studying" << endl;
+      cout << "Cultivating a hobby" << endl;
+      cout << "Playing with friends" << endl;
+      cout << "Reading" << endl;
+      cout << "Writing" << endl;
+      cout << "Watching TV" << endl;
+      cout << "Playing computer games" << endl;
+    }
+    else{
+      cout << "Studying" << endl;
+      cout << "Cultivating a hobby" << endl;
+      cout << "Playing with friends" << endl;
+      cout << "Reading" << endl;
+      cout << "Writing" << endl;
+    }
+    cin << activity;
+    if (activity == "Studying"){
+      Studying();
+    }
+    if (activity == "Cultivating a hobby"){
+      Cultivating_hobbies();
+    }
+    if (activity == "Playing with friends"){
+      Playing_with_friends();
+    }
+    if (activity == "Reading"){
+      Reading();
+    }
+    if (activity == "writing"){
+      Writing();
+    }
+    if (activity == "Watching TV"){
+      if (Academic_performance >= -10){
+        Watching_TV();
+      }
+      else{
+        cout "You cannot choose this option, please choose again." << endl;
+        i-=1;
+      }
+    }
+    if (activity == "Playing computer games"){
+      Playing_computer();
+    }
+    else{
+      cout << "Please choose the given activities." << endl;
+    }
   }
-  else{
-  cout << "Studying" << endl;
-  cout << "Cultivating a hobby" << endl;
-  cout << "Playing with friends" << endl;
-  cout << "Reading" << endl;
-  cout << "Writing" << endl;
-  }
-  cin << activity;
-  if (activity == "Cultivating a hobby"){
-  Cultivating_hobbies(Artistic_sense)}
-  if (activity == "Watching TV"){
-  Watching_TV(Curiosity)}
-  if (activity == "Reading"){
-  Reading(Intelligence, Academic_performance)}
-  if (activity == "Playing computer games"){
-  Playing_computer(Academic_performance)}
-  else{
-  cout << "Please choose the given activities." << endl;}
-}
-
-
-  
- 
-  cin << activity;
-  if (activity == "Cultivating a hobby"){
-   Cultivating_hobbies();
-  }
-  if (activity == "Playing with friends"){
-   Playing_with_friends();
-  }
-  if (activity == "Watching TV"){
-   if (Academic_performance >= -10){
-    Watching_TV();
-   }
-   else{
-    cout "You cannot choose this option, please choose again." << endl;
-    i-=1;
-   }
-  }
-  if (activity == "Reading"){
-   Reading();
-  }
-  if (activity == "Playing computer games"){
-   if (Academic_performance >= -10){
-    Playing_computer();
-   }
-   else{
-    cout "You cannot choose this option, please choose again." << endl;
-    i-=1;
-   }
-  }
-  else{
-   cout << "Please choose the given activities." << endl;
-  }
- }
 }
