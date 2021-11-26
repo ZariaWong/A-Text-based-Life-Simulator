@@ -66,15 +66,34 @@ Void bad_performance(){
 }
 
 Void phase4(){
-  cout << "
+  string major;
   if (Academic_performance >= 100){
-    cout << "Top University (IBGM/MBBS) << endl;
+    cout << "After graduating from high school, you enter a top University with excellent grades."<< endl;
+    cout << "You decide to major in:" << eldl;
+    cout << "(Please choose from the following majors)" << endl;
+    cout << "IBGM   MBBS   Business   Social_Science   Arts   Science";
+    cin >> major;
+    cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
   if (Academic_performance >= 80 && Academic_performance < 100){
-    cout << "Top University (Social Science/ Art/Science) << endl;
+    cout << "After graduating from high school, you enter a top University with excellent grades."<< endl;
+    cout << "You decide to major in:" << eldl;
+    cout << "(Please choose from the following majors)" << endl;
+    cout << "Business   Social_Science   Arts   Science";
+    cin >> major;
+    cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
   if (Academic_performance >= 50 && Academic_performance < 80){
-    cout << "Normal University" << endl;
+    cout << "After graduating from high school, you enter a normal University."<< endl;
+    cout << "You decide to major in:" << eldl;
+    cout << "(Please choose from the following majors)" << endl;
+    cout << "Business   Social_Science   Arts   Science";
+    cin >> major;
+    while (major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
+      cout << "There is no such major, please input again."
+      cin << major;
+    }
+    cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
   if (Academic_performance < 50){
     cout << "Sorry to inform that you don't get any offer from the university due to the substandard academic performance." << endl;
