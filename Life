@@ -52,6 +52,7 @@ Void Internship (){
 Void Competition (){
   Competitiveness += random(5, 10);
   Intelligence += random(5, 10);
+  Academic_performance += random(0, 5);
 }
 
 Void Hall_activities (){
@@ -115,7 +116,7 @@ Void phase4(){
   cout << "After going to  university, you have more free time and decide to focus on two things every year to improve yourself." << endl;
   for (int i=1; i <=4; i++){
     cout << "Now, you are a year " << i << " student， please choose two of the following activities to participate." << endl;
-    cout << "Studying  Internship  Competition  Hall_activities  Parties" << endl;
+    cout << "Studying  Internship  Competition  Hall_activities  Go_to_parties" << endl;
     cout << "activity 1: ";
     cin >> activity_1;
     cout << endl;
@@ -134,7 +135,7 @@ Void phase4(){
     if (activity_1 == "Hall_acativities" || activity_2 == "Hall_acativities"){
       Hall_acativities();
     }
-    if (activity_1 == "Parties" || activity_2 == "Parties"){
+    if (activity_1 == "Go_to_parties" || activity_2 == "Go_to_parties"){
       Parties();
     }
     else{
