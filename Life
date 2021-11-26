@@ -73,6 +73,10 @@ Void phase4(){
     cout << "(Please choose from the following majors)" << endl;
     cout << "IBGM   MBBS   Business   Social_Science   Arts   Science";
     cin >> major;
+    while (major != "IBGM" && major != "MBBS" && major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
+      cout << "There is no such major, please input again."
+      cin << major;
+    }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
   if (Academic_performance >= 80 && Academic_performance < 100){
@@ -81,6 +85,10 @@ Void phase4(){
     cout << "(Please choose from the following majors)" << endl;
     cout << "Business   Social_Science   Arts   Science";
     cin >> major;
+    while (major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
+      cout << "There is no such major, please input again."
+      cin << major;
+    }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
   if (Academic_performance >= 50 && Academic_performance < 80){
