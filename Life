@@ -77,6 +77,6 @@ Void phase3(){
     cout << "Normal University" << endl;
   }
   if (Academic_performance < 50){
-    cout << "
+    cout << "Sorry to inform that you don't get any offer from the university due to the substandard academic performance." << endl;
   }
 }
