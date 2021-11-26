@@ -60,7 +60,23 @@ Void Joining activities (){
 }
 
 Void bad_performance(){
-  cout << "Your grades drop due to indugling in entertainment."
+  cout << "Your grades drop due to indugling in entertainment." << endl;
   cout << "Your parents are unhappy and forbid you to play computer games or watch TV." << endl;
   cout << "(You are not allowed to choose these two option in the next round)";
+}
+
+Void phase3(){
+  cout << "
+  if (Academic_performance >= 100){
+    cout << "Top University (IBGM/MBBS) << endl;
+  }
+  if (Academic_performance >= 80 && Academic_performance < 100){
+    cout << "Top University (Social Science/ Art/Science) << endl;
+  }
+  if (Academic_performance >= 50 && Academic_performance < 80){
+    cout << "Normal University" << endl;
+  }
+  if (Academic_performance < 50){
+    cout << "
+  }
 }
