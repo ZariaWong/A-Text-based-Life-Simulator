@@ -60,30 +60,33 @@ Void phase2(){
    Playing_with_friends();
   }
   if (activity == "Watching TV"){
-   if (Academic_performance >= -10){
-    Watching_TV();
-   }
-   else{
-    cout "You cannot choose this option, please choose again." << endl;
-    i-=1;
-   }
+    if (Academic_performance >= -10){
+      Watching_TV();
+      if (Academic_performance < -10){
+        bad_performance();
+      }
+    }
+    else{
+      cout "You cannot choose this option, please choose again." << endl;
+      i-=1;
+    }
   }
   if (activity == "Reading"){
    Reading();
   }
   if (activity == "Playing computer games"){
-   if (Academic_performance >= -10){
-    Playing_computer();
-   }
-   else{
-    cout "You cannot choose this option, please choose again." << endl;
-    i-=1;
+    if (Academic_performance >= -10){
+       Playing_computer();
+       if (Academic_performance < -10){
+         bad_performance();
+       }
+     }
+     else{
+       cout "You cannot choose this option, please choose again." << endl;
+       i-=1;
+     }
    }
   }
-  else{
-   cout << "Please choose the given activities." << endl;
-  }
- }
 }
 
 Void phase3(){
