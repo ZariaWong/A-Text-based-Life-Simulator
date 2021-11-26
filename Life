@@ -104,6 +104,9 @@ Void phase3(){
     if (activity == "Watching TV"){
       if (Academic_performance >= -10){
         Watching_TV();
+        if (Academic_performance < -10){
+          bad_performance();
+        }
       }
       else{
         cout "You cannot choose this option, please choose again." << endl;
@@ -111,10 +114,16 @@ Void phase3(){
       }
     }
     if (activity == "Playing computer games"){
-      Playing_computer();
-    }
-    else{
-      cout << "Please choose the given activities." << endl;
+      if (Academic_performance >= -10){
+        Playing_computer();
+        if (Academic_performance < -10){
+          bad_performance();
+        }
+      }
+      else{
+        cout "You cannot choose this option, please choose again." << endl;
+        i-=1;
+      }
     }
   }
 }
