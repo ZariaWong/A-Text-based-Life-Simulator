@@ -54,9 +54,15 @@ Void Competition (){
   Intelligence += random(5, 10);
 }
 
-Void Joining activities (){
+Void Hall_activities (){
   Social_skills += random(10, 15);
   Artistic_sense += random(5, 10);
+}
+
+Void Parties(){
+  Social_skills += random(10, 15);
+  Academic_performance -= random(5, 10);
+  Competitiveness -= random(0, 5);
 }
 
 Void bad_performance(){
@@ -66,7 +72,7 @@ Void bad_performance(){
 }
 
 Void phase4(){
-  string major;
+  string major, activity_1, activity_2;
   if (Academic_performance >= 100){
     cout << "After graduating from high school, you enter a top University with excellent grades."<< endl;
     cout << "You decide to major in:" << eldl;
@@ -105,5 +111,34 @@ Void phase4(){
   }
   if (Academic_performance < 50){
     cout << "Sorry to inform that you don't get any offer from the university due to the substandard academic performance." << endl;
+  }
+  cout << "After going to  university, you have more free time and decide to focus on two things every year to improve yourself." << endl;
+  for (int i=1; i <=4; i++){
+    cout << "Now, you are a year " << i << " student， please choose two of the following activities to participate." << endl;
+    cout << "Studying  Internship  Competition  Hall_activities  Parties" << endl;
+    cout << "activity 1: ";
+    cin >> activity_1;
+    cout << endl;
+    cout << "activity 2: ";
+    cin >> "activity_2;
+    cout << endl;
+    if (activity_1 == "Studying" || activity_2 == "studying"){
+      Studying();
+    }
+    if (activity_1 == "Internship" || activity_2 == "Internship"){
+      Internship();
+    }
+    if (activity_1 == "Competition" || activity_2 == "Competition"){
+      Competition();
+    }
+    if (activity_1 == "Hall_acativities" || activity_2 == "Hall_acativities"){
+      Hall_acativities();
+    }
+    if (activity_1 == "Parties" || activity_2 == "Parties"){
+      Parties();
+    }
+    else{
+      cout << "You cannot choose this option, please choose again." << endl;
+    }
   }
 }
