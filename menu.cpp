@@ -1,4 +1,4 @@
-//Menu.h
+//Menu.cpp
 #pragma once
 #include <iostream>
 #include <windows.h>
