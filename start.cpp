@@ -21,7 +21,7 @@ void phase1(){
   cout << "Playing with other children" << endl;
   cout << "Watching TV" << endl;
   cout << "Reading" << endl;
-  cin << activity;
+  cin >> activity;
   if (activity == "Playing with other children"){
    Playing_with_friends(Social_skills)
   }
@@ -53,7 +53,7 @@ void phase2(){
    cout << "Playing with friends" << endl;
    cout << "Reading" << endl;
   }
-  cin << activity;
+  cin >> activity;
   if (activity == "Cultivating a hobby"){
    Cultivating_hobbies();
   }
@@ -91,7 +91,7 @@ void phase2(){
 }
 
 void phase3(){
-  cout >> " " >> endl;
+  cout << " " << endl;
   for (int i=13; i<=18 i++){
     cout << "You are " << i << " years old now! You may choose following activities as an extracurricular activities." << endl;
     if (Academic_performance >= -10){
@@ -110,7 +110,7 @@ void phase3(){
       cout << "Reading" << endl;
       cout << "Writing" << endl;
     }
-    cin << activity;
+    cin >> activity;
     if (activity == "Studying"){
       Studying();
     }
@@ -164,7 +164,7 @@ void phase4(){
     cin >> major;
     while (major != "IBGM" && major != "MBBS" && major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
       cout << "There is no such major, please input again."
-      cin << major;
+      cin >> major;
     }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
@@ -176,7 +176,7 @@ void phase4(){
     cin >> major;
     while (major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
       cout << "There is no such major, please input again."
-      cin << major;
+      cin >> major;
     }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
@@ -188,7 +188,7 @@ void phase4(){
     cin >> major;
     while (major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
       cout << "There is no such major, please input again."
-      cin << major;
+      cin >> major;
     }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
@@ -203,7 +203,7 @@ void phase4(){
     cin >> activity_1;
     cout << endl;
     cout << "activity 2: ";
-    cin >> "activity_2;
+    cin >> activity_2;
     cout << endl;
     if (activity_1 == "Studying" || activity_2 == "studying"){
       Studying();
