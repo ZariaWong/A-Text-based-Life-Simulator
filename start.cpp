@@ -235,32 +235,6 @@ void phase4(){
 }
 
 
-
-int main(){
-cout << "Welcome to Life Simulation！" << endl;
-cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn.!";
-cout << "If you would like to call the menu, save or load the game, please type MENU and enter.";
-cout << "Now, please choose a name for yourself.";
-string Name;
-cin >> Name;
-cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M.";
-string gender;
-cin >> gender;
-if (gender != "F" | gender != "M"){
- cout << "Choose Female by typing F. Choose Male by typing M." << endl;
- cin >> gender;}
-cout <<"Now, lets look at the faces:" << endl;
-int images;
-images= 4;
-if ( images!=1 || images !=2 || images!=3 ){
-  image1();
-  image2();
-  image3();
-  cout << "Please choose your face!"<<endl;
-  cin >> images;}
-}
- 
- 
 void phase5(){
 cout << "Happy Graduation!!!"<<endl;
 cout << "Now, you could determine your future career path."<<endl;
@@ -544,3 +518,31 @@ cout << "Please type the job you would like to choose:"<<endl;
 cin >> yourjob;
 }
 
+
+
+
+int main(){
+cout << "Welcome to Life Simulation！" << endl;
+cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn.!";
+cout << "If you would like to call the menu, save or load the game, please type MENU and enter.";
+cout << "Now, please choose a name for yourself.";
+string Name;
+cin >> Name;
+cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M.";
+string gender;
+cin >> gender;
+if (gender != "F" | gender != "M"){
+ cout << "Choose Female by typing F. Choose Male by typing M." << endl;
+ cin >> gender;}
+cout <<"Now, lets look at the faces:" << endl;
+int images;
+images= 4;
+if ( images!=1 || images !=2 || images!=3 ){
+  image1();
+  image2();
+  image3();
+  cout << "Please choose your face!"<<endl;
+  cin >> images;}
+}
+ 
+ 
