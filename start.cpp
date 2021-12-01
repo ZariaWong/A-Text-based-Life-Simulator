@@ -8,6 +8,133 @@ using namespace std;
 int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
 string gender, Name;
 
+void Femalepartner(){
+int min = 0;
+int max = 4;
+int word = rand() % (max - min + 1) + min
+string partnername;
+if (word==0){
+partnername="Peter";}
+if (word==1){
+partnername="Leo";}
+if (word==2){
+partnername="Jacky";}
+if (word==3){
+partnername="William";}
+if (word==4){
+partnername="Harry";}
+
+
+int min = 0;
+int max = 4;
+int word = rand() % (max - min + 1) + min
+string job;
+if (word==0){
+job="Nurse.";}
+if (word==1){
+job="Software engineer.";}
+if (word==2){
+job="Lawyer.";}
+if (word==3){
+job="Flight attendant.";}
+if (word==4){
+job="Writer.";}
+
+cout << "Hi" << Name << ", I am " << partnername << endl;
+cout << "I am a " << job <<endl;
+cout << "I love you! Please be my girlfriend!" << endl;
+char YESNO;
+YESNO="NIL";
+for (YESNO!="Yes"| YESNO!="No"){
+  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
+  cin >> YESNO;}
+if (YESNO=="Yes"){
+Partner+=1;}
+}
+
+void Malepartner(){
+int min = -1, max = 5;
+srand(time(NULL));
+int word = rand()%(max-min+1)+min;
+if (word==0){
+partnername="Lily";}
+if (word==1){
+partnername="Amy";}
+if (word==2){
+partnername="Snow";}
+if (word==3){
+partnername="Macy";}
+if (word==4){
+partnername="Ana";}
+
+
+int jobs = rand()%(max-min+1)+min;
+string job;
+if (jobs==0){
+job="Doctor.";}
+if (jobs==1){
+job="Civil engineer.";}
+if (jobs==2){
+job="Lawyer.";}
+if (jobs==3){
+job="Pilot.";}
+if (jobs==4){
+job="Writer.";}
+
+cout << "Hi" << Name << ", I am " << partnername << endl;
+cout << "I am a " << job <<endl;
+cout << "Would you like to be my boyfriend?" << endl;
+char YESNO;
+YESNO="NIL";
+for (YESNO!="Yes"| YESNO!="No"){
+  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
+  cin >> YESNO;}
+if (YESNO=="Yes"){
+Partner+=1;}
+}
+
+void Date(){
+if (wordings==0){
+"Let's go to cinema!"}
+if (wordings==1){
+"I love you so much! Honey~"}
+if (wordings==2){
+"I have booked this restaurant, let's go together."}
+if (wordings==3){
+"You want a son or a daughther?"}
+if (wordings==4){
+"I would like to go Hawaii"}
+}
+
+string Career(){
+cout << "Please choose from the following jobs/further studies"<<endl;
+if (Academic_performance >= 200 && Intelligence >= 60){
+cout << "Ph.D" <<endl;}
+if (Academic_performance >= 150 && Intelligence >= 40){
+cout << "MA" << endl;}
+if (Social_skills >=50){
+cout << "Insurance Sales" <<endl}
+if (Social_skills >=50 && Competitiveness >=40 && Academic_performance >=160){
+cout << "Investment banking front office" << endl}
+if (Intelligence >=50 && Academic_performance >=100){
+cout <<"Programming" <<endl;}
+if (Curiosity =10 && Intelligence >=40){
+cout <<"Online Game Design" <<endl;}
+
+cout <<"Waiter/Waitress"<<endl;
+cout <<"Artist"<<endl;
+cout <<"Writer"<<endl;
+cout <<"Journalist"<<endl;
+cout <<"Circus performers"<<endl;
+cout <<"Basketball player"<<endl;
+cout <<"Journalist"<<endl;
+
+cout << "Please type the job you would like to choose:"<<endl;
+cin >> yourjob;
+return yourjob;
+}
+
+
 void phase1(){
  time_t now = time(0);
  char* dt = ctime(&now);
@@ -419,131 +546,7 @@ cout << "    -V-     "<<endl;
 cout << "     -      "<<endl;
 }
 
-void Femalepartner(){
-int min = 0;
-int max = 4;
-int word = rand() % (max - min + 1) + min
-string partnername;
-if (word==0){
-partnername="Peter";}
-if (word==1){
-partnername="Leo";}
-if (word==2){
-partnername="Jacky";}
-if (word==3){
-partnername="William";}
-if (word==4){
-partnername="Harry";}
 
-
-int min = 0;
-int max = 4;
-int word = rand() % (max - min + 1) + min
-string job;
-if (word==0){
-job="Nurse.";}
-if (word==1){
-job="Software engineer.";}
-if (word==2){
-job="Lawyer.";}
-if (word==3){
-job="Flight attendant.";}
-if (word==4){
-job="Writer.";}
-
-cout << "Hi" << Name << ", I am " << partnername << endl;
-cout << "I am a " << job <<endl;
-cout << "I love you! Please be my girlfriend!" << endl;
-char YESNO;
-YESNO="NIL";
-for (YESNO!="Yes"| YESNO!="No"){
-  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
-  cin >> YESNO;}
-if (YESNO=="Yes"){
-Partner+=1;}
-}
-
-void Malepartner(){
-int min = -1, max = 5;
-srand(time(NULL));
-int word = rand()%(max-min+1)+min;
-if (word==0){
-partnername="Lily";}
-if (word==1){
-partnername="Amy";}
-if (word==2){
-partnername="Snow";}
-if (word==3){
-partnername="Macy";}
-if (word==4){
-partnername="Ana";}
-
-
-int jobs = rand()%(max-min+1)+min;
-string job;
-if (jobs==0){
-job="Doctor.";}
-if (jobs==1){
-job="Civil engineer.";}
-if (jobs==2){
-job="Lawyer.";}
-if (jobs==3){
-job="Pilot.";}
-if (jobs==4){
-job="Writer.";}
-
-cout << "Hi" << Name << ", I am " << partnername << endl;
-cout << "I am a " << job <<endl;
-cout << "Would you like to be my boyfriend?" << endl;
-char YESNO;
-YESNO="NIL";
-for (YESNO!="Yes"| YESNO!="No"){
-  cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
-  cin >> YESNO;}
-if (YESNO=="Yes"){
-Partner+=1;}
-}
-
-void Date(){
-if (wordings==0){
-"Let's go to cinema!"}
-if (wordings==1){
-"I love you so much! Honey~"}
-if (wordings==2){
-"I have booked this restaurant, let's go together."}
-if (wordings==3){
-"You want a son or a daughther?"}
-if (wordings==4){
-"I would like to go Hawaii"}
-}
-
-string Career(){
-cout << "Please choose from the following jobs/further studies"<<endl;
-if (Academic_performance >= 200 && Intelligence >= 60){
-cout << "Ph.D" <<endl;}
-if (Academic_performance >= 150 && Intelligence >= 40){
-cout << "MA" << endl;}
-if (Social_skills >=50){
-cout << "Insurance Sales" <<endl}
-if (Social_skills >=50 && Competitiveness >=40 && Academic_performance >=160){
-cout << "Investment banking front office" << endl}
-if (Intelligence >=50 && Academic_performance >=100){
-cout <<"Programming" <<endl;}
-if (Curiosity =10 && Intelligence >=40){
-cout <<"Online Game Design" <<endl;}
-
-cout <<"Waiter/Waitress"<<endl;
-cout <<"Artist"<<endl;
-cout <<"Writer"<<endl;
-cout <<"Journalist"<<endl;
-cout <<"Circus performers"<<endl;
-cout <<"Basketball player"<<endl;
-cout <<"Journalist"<<endl;
-
-cout << "Please type the job you would like to choose:"<<endl;
-cin >> yourjob;
-return yourjob;
-}
 
 
 
