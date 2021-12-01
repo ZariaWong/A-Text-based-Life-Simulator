@@ -2,6 +2,8 @@
 #include <string>
 #include <cstdlib>
 #include <life.h>
+#include <time.h>
+
 using namespace std;
 int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
 string yourjob;
@@ -415,7 +417,9 @@ cout << "     -      "<<endl;
 }
 
 void Femalepartner(Name){
-int word = (int) rand() / (RAND_MAX+5);
+int min = 0;
+int max = 4;
+int word = rand() % (max - min + 1) + min
 string partnername;
 if (word==0){
 partnername="Peter";}
@@ -428,7 +432,10 @@ partnername="William";}
 if (word==4){
 partnername="Harry";}
 
-int job = (int) rand() / (RAND_MAX+5);
+
+int min = 0;
+int max = 4;
+int word = rand() % (max - min + 1) + min
 string job;
 if (word==0){
 job="Nurse.";}
