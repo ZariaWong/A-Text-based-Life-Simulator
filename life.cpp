@@ -14,60 +14,60 @@ int random(int min, int max){
   return random;
 }
 
-Void Playing_with_friends (){
+void Playing_with_friends (){
   social_skills += random(5, 10);
 }
 
-Void Watching_TV(){
+void Watching_TV(){
   Curiosity += 10;
   Academic_performance -= random(0-5);
 }
 
-Void Reading (){
+void Reading (){
   Intelligence += random(5, 10);
   Academic_performance += random(5, 10);
 }
 
-Void Cultivating_hobbies (){
+void Cultivating_hobbies (){
   Artistic_sense += 10;
 }
 
-Void Playing_computer (){
+void Playing_computer (){
   Academic_performance -= random(5, 10);
   Intelligence += random(0, 5);
 }
 
-Void Studying (){
+void Studying (){
   Academic_performance += random(15, 20);
 }
 
-Void Writing () {
+void Writing () {
   Artistic_sense += 10;
   
 }
 
-Void Internship (){
+void Internship (){
   Competitiveness += random(10, 15);
 }
 
-Void Competition (){
+void Competition (){
   Competitiveness += random(5, 10);
   Intelligence += random(5, 10);
   Academic_performance += random(0, 5);
 }
 
-Void Hall_activities (){
+void Hall_activities (){
   Social_skills += random(10, 15);
   Artistic_sense += random(5, 10);
 }
 
-Void Parties(){
+void Parties(){
   Social_skills += random(10, 15);
   Academic_performance -= random(5, 10);
   Competitiveness -= random(0, 5);
 }
 
-Void bad_performance(){
+void bad_performance(){
   cout << "Your grades drop due to indugling in entertainment." << endl;
   cout << "Your parents are unhappy and forbid you to play computer games or watch TV." << endl;
   cout << "(You are not allowed to choose these two option in the next round)";
