@@ -7,6 +7,7 @@
 using namespace std;
 int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
 string yourjob;
+
 void phase1(){
  time_t now = time(0);
  char* dt = ctime(&now);
@@ -564,6 +565,7 @@ if ( images!=1 || images !=2 || images!=3 ){
   image3();
   cout << "Please choose your face!"<<endl;
   cin >> images;
+cout <<"There is another important thing, anytime you would like to call the menu, please type MENU. In the menu, you could Start, Save, Restart or Exit the game"<<endl;
 Phase1();
 Phase2();
 Phase3();
