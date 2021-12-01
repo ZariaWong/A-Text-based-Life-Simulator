@@ -506,23 +506,23 @@ void phase3() {
 	            Studying();
 							j = 1;
 	        }
-	        if (activity == "Cultivating_a_hobby") {
+	        else if (activity == "Cultivating_a_hobby") {
 	            Cultivating_hobbies();
 							j = 1;
 	        }
-	        if (activity == "Playing_with_friends") {
+	        else if (activity == "Playing_with_friends") {
 	            Playing_with_friends();
 							j = 1;
 	        }
-	        if (activity == "Reading") {
+	        else if (activity == "Reading") {
 	            Reading();
 							j = 1;
 	        }
-	        if (activity == "Writing") {
+	        else if (activity == "Writing") {
 	            Writing();
 							j = 1;
 	        }
-	        if (activity == "Watching_TV") {
+	        else if (activity == "Watching_TV") {
 	            if (Academic_performance >= -10) {
 	                Watching_TV();
 									if (Academic_performance < -10) {
@@ -534,7 +534,7 @@ void phase3() {
 	                cout << "You cannot choose this option, becuase of your bad academic performance(;-;), please choose again." << endl;
 	            }
 	        }
-	        if (activity == "Playing_computer_games") {
+	        else if (activity == "Playing_computer_games") {
 	            if (Academic_performance >= -10) {
 	                Playing_computer();
 	                if (Academic_performance < -10) {
@@ -600,11 +600,12 @@ void phase4() {
     }
     if (Academic_performance < 50) {
         cout << "Sorry to inform that you don't get any offer from the university due to the substandard academic performance." << endl;
+	return;
     }
     cout << "After going to  university, you have more free time and decide to focus on two things every year to improve yourself." << endl;
     for (int i = 1; i <= 4; i++) {
 				ages += i;
-        cout << "Now, you are a year " << i << " student�� please choose two of the following activities to participate." << endl;
+        cout << "Now, you are a year " << i << " student! please choose two of the following activities to participate." << endl;
         cout << "Studying  Internship  Competition  Hall_activities  Go_to_parties" << endl;
         cout << "activity 1: ";
         cin >> activity_1;
