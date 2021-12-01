@@ -11,6 +11,16 @@ using namespace std;
 void Pos(int x, int y);
 void HideCursor();
 
+ofstream out("save.txt"); 
+out << partner, ages, Cooking_sense, Social_skills, Curiosity, Intelligence, Artistic_sense, Academic_performance, Competitiveness, fchild, mchild;
+string gender, Name; 
+Basic loading:
+
+ifstream in("save.txt"); 
+in >> partner, ages, Cooking_sense, Social_skills, Curiosity, Intelligence, Artistic_sense, Academic_performance, Competitiveness, fchild, mchild;
+string gender, Name ; 
+
+
 int Menu_Examine = 0;			//avoid menu be repeatedly printed 
 void DrawMenu()					//print the menu
 {
