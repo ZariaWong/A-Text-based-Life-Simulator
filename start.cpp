@@ -160,13 +160,15 @@ void phase4(){
   string major, activity_1, activity_2;
   if (Academic_performance >= 100){
     cout << "After graduating from high school, you enter a top University with excellent grades."<< endl;
-    cout << "You decide to major in:" << eldl;
+    cout << "You decide to major in:" << endl;
     cout << "(Please choose from the following majors)" << endl;
     cout << "IBGM   MBBS   Business   Social_Science   Arts   Science";
     cin >> major;
     while (major != "IBGM" && major != "MBBS" && major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
-      cout << "There is no such major, please input again."
+      cout << "There is no such major, please input again." << endl;
+						cout << "You decide to major in: ";
       cin >> major;
+						cout << endl;
     }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
