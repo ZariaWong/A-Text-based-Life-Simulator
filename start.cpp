@@ -94,7 +94,7 @@ void phase2(){
 void phase3(){
   cout << " " << endl;
   string activity;
-  for (int i=13; i<=18 i++){
+  for (int i=13; i<=18; i++){
     cout << "You are " << i << " years old now! You may choose following activities as an extracurricular activities." << endl;
     if (Academic_performance >= -10){
       cout << "Studying" << endl;
