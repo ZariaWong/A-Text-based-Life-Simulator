@@ -84,7 +84,7 @@ void phase2(){
        }
      }
      else{
-       cout "You cannot choose this option, please choose again." << endl;
+       cout << "You cannot choose this option, please choose again." << endl;
        i-=1;
      }
    }
