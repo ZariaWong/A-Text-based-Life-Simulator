@@ -11,15 +11,18 @@ using namespace std;
 void Pos(int x, int y);
 void HideCursor();
 
-ofstream out("save.txt"); 
-out << partner, ages, Cooking_sense, Social_skills, Curiosity, Intelligence, Artistic_sense, Academic_performance, Competitiveness, fchild, mchild;
-string gender, Name; 
-Basic loading:
-
-ifstream in("save.txt"); 
-in >> partner, ages, Cooking_sense, Social_skills, Curiosity, Intelligence, Artistic_sense, Academic_performance, Competitiveness, fchild, mchild;
-string gender, Name ; 
-
+void Pos(int x, int y)
+{
+  COORD pos;
+  pos.X=x;
+  pos.Y=y;
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);
+  }
+  
+void HideCursor()
+{
+  CONSOLE_CURSOR_INFO cursor_info ={1,0};
+  SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE),&cursor_info);
 
 int Menu_Examine = 0;			//avoid menu be repeatedly printed 
 void DrawMenu()					//print the menu
