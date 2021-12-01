@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <life.h>
 using namespace std;
-int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, fchild=0, mchild=0;
+int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
 
 void phase1(){
  time_t now = time(0);
