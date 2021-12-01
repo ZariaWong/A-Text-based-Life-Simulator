@@ -739,8 +739,18 @@ if (images != 1 || images != 2 || images != 3) {
   cout << "Please choose your face!" << endl;
   cin >> images;
 }
+if (ages >= 0 && ages <= 6){
 	phase1();
+}
+else if (ages >= 7 && ages <= 12){
 	phase2();
+}
+else if (ages >=13 && ages <= 18){
 	phase3();
+}
+else if (ages >= 19 && ages <= 22){
 	phase4();
-	phase5();}
+else if (ages >= 23){
+	phase5();
+}
+}
