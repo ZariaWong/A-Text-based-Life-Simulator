@@ -23,13 +23,13 @@ void phase1(){
   cout << "Reading" << endl;
   cin >> activity;
   if (activity == "Playing with other children"){
-   Playing_with_friends(Social_skills)
+   Playing_with_friends()
   }
   if (activity == "Watching TV"){
-   Watching_TV(Curiosity)
+   Watching_TV()
   }
   if (activity == "Reading"){
-   Reading(Intelligence)
+   Reading()
   }
   else{
    cout << "Please choose the given activities." << endl;
