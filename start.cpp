@@ -5,7 +5,7 @@
 #include <time.h>
 
 using namespace std;
-int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
+int partner=0, ages=0, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
 string gender, Name;
 
 void Femalepartner(){
@@ -147,6 +147,7 @@ void phase1(){
  cout << "Reading" << endl;
  string activity;
  for (int i=1; i<=6; i++){
+  ages = i;
   cout << "You are " << i << " years old now! Please choose an activities to enrich life." << endl;
   cout << "Playing with other children" << endl;
   cout << "Watching TV" << endl;
@@ -171,6 +172,7 @@ void phase2(){
  cout << "You are now at the age of going for the primary school." << endl;
  string activity;
  for (int i=7; i<=12; i++){
+  ages = i;
   cout << "You are " << i << " years old now! You may choose an activities as extracurricular activities." << endl;
   if (Academic_performance >= -10){
    cout << "Cultivating a hobby" << endl;
@@ -225,6 +227,7 @@ void phase3(){
   cout << " " << endl;
   string activity;
   for (int i=13; i<=18; i++){
+    ages = i;
     cout << "You are " << i << " years old now! You may choose following activities as an extracurricular activities." << endl;
     if (Academic_performance >= -10){
       cout << "Studying" << endl;
@@ -335,6 +338,7 @@ void phase4(){
   }
   cout << "After going to  university, you have more free time and decide to focus on two things every year to improve yourself." << endl;
   for (int i=1; i <=4; i++){
+    ages += i
     cout << "Now, you are a year " << i << " student， please choose two of the following activities to participate." << endl;
     cout << "Studying  Internship  Competition  Hall_activities  Go_to_parties" << endl;
     cout << "activity 1: ";
@@ -379,7 +383,7 @@ cout << "remember that time is limited in this game."<<endl;
 cout << "You can only form families before 40,"<<endl;
 cout << "and you will end your life at 65."<<endl;
 cout << "Treasure your time and start your life!"<<endl;
-for (ages=22;ages<66;ages++){
+for (ages;ages<66;ages++){
  srand(time(NULL));
  int min = 0, max = 5;
  int rannn = rand()%(max-min+1)+min;
