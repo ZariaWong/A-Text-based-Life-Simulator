@@ -236,9 +236,10 @@ void phase4(){
 
 
 void phase5(){
+string yourjob;
 cout << "Happy Graduation!!!"<<endl;
 cout << "Now, you could determine your future career path."<<endl;
-Career();
+yourjob = Career();
 cout << "You are now a " << yourjob;
 cout << "Starting from 22, you could arrange an item for yourself every year."<<endl;
 cout << "From entertainment to part-time, from developing interests to meeting your partner,"<<endl;
@@ -503,19 +504,19 @@ if (wordings==4){
 "I would like to go Hawaii"}
 }
 
-void Career(){
+string Career(){
 cout << "Please choose from the following jobs/further studies"<<endl;
-if (Academic performance >= 200 && intelligence >= 60){
+if (Academic_performance >= 200 && Intelligence >= 60){
 cout << "Ph.D" <<endl;}
-if (Academic performance >= 150 && intelligence >= 40){
+if (Academic_performance >= 150 && Intelligence >= 40){
 cout << "MA" << endl;}
-if (Social Skills >=50){
+if (Social_skills >=50){
 cout << "Insurance Sales" <<endl}
-if (Social Skills >=50 && Competitiveness >=40 && Academic performance >=160){
+if (Social_skills >=50 && Competitiveness >=40 && Academic_performance >=160){
 cout << "Investment banking front office" << endl}
-if (intelligence >=50 && Academic performance >=100){
+if (Intelligence >=50 && Academic_performance >=100){
 cout <<"Programming" <<endl;}
-if (Curiosity =10 && intelligence >=40){
+if (Curiosity =10 && Intelligence >=40){
 cout <<"Online Game Design" <<endl;}
 
 cout <<"Waiter/Waitress"<<endl;
@@ -528,6 +529,7 @@ cout <<"Journalist"<<endl;
 
 cout << "Please type the job you would like to choose:"<<endl;
 cin >> yourjob;
+return yourjob;
 }
 
 
