@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <life.h>
 #include <time.h>
+#include <menu.cpp>
 
 using namespace std;
 int partner=0, ages=0, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
@@ -516,6 +517,10 @@ for (ages;ages<66;ages++){
    if (familyaction=="Children/Child"){
    cout << "You enjoy great time with your kids!" <<endl;}
    }
+  cout << "Please type MENU if you would like to call the menu."
+  if (cin >> MENU){
+    DrawMenu();
+    Chioce(int &x);
    }
    cout << "You are now 65 years old."<<endl;
    cout <<" You have came to the end of your life."<<endl;
@@ -575,7 +580,7 @@ if ( images!=1 || images !=2 || images!=3 ){
   image3();
   cout << "Please choose your face!"<<endl;
   cin >> images;
-cout <<"There is another important thing, anytime you would like to call the menu, please type MENU. In the menu, you could Start, Save, Restart or Exit the game"<<endl;
+cout <<"There is another important thing, you can only call the MENU at the end of each age. In the menu, you could Start, Save, Restart or Exit the game."<<endl;
 Phase1();
 Phase2();
 Phase3();
