@@ -20,7 +20,7 @@ void Playing_with_friends (){
 
 void Watching_TV(){
   Curiosity += 10;
-  Academic_performance -= random(0-5);
+  Academic_performance -= random(0, 5);
 }
 
 void Reading (){
