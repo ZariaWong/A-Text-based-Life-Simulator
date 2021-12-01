@@ -222,8 +222,8 @@ void phase4(){
     if (activity_1 == "Competition" || activity_2 == "Competition"){
       Competition();
     }
-    if (activity_1 == "Hall_acativities" || activity_2 == "Hall_acativities"){
-      Hall_acativities();
+    if (activity_1 == "Hall_activities" || activity_2 == "Hall_activities"){
+      Hall_activities();
     }
     if (activity_1 == "Go_to_parties" || activity_2 == "Go_to_parties"){
       Parties();
