@@ -556,7 +556,12 @@ if ( images!=1 || images !=2 || images!=3 ){
   image2();
   image3();
   cout << "Please choose your face!"<<endl;
-  cin >> images;}
+  cin >> images;
+Phase1();
+Phase2();
+Phase3();
+Phase4();
+Phase5();}
 }
  
  
