@@ -39,6 +39,7 @@ void phase1(){
 
 void phase2(){
  cout << "You are now at the age of going for the primary school." << endl;
+ string activity;
  for (int i=7; i<=12; i++){
   cout << "You are " << i << " years old now! You may choose an activities as extracurricular activities." << endl;
   if (Academic_performance >= -10){
@@ -92,6 +93,7 @@ void phase2(){
 
 void phase3(){
   cout << " " << endl;
+  string activity;
   for (int i=13; i<=18 i++){
     cout << "You are " << i << " years old now! You may choose following activities as an extracurricular activities." << endl;
     if (Academic_performance >= -10){
