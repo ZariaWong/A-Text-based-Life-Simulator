@@ -15,7 +15,7 @@ int random(int min, int max){
 }
 
 void Playing_with_friends (){
-  social_skills += random(5, 10);
+  Social_skills += random(5, 10);
 }
 
 void Watching_TV(){
