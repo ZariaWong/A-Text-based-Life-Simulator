@@ -6,7 +6,7 @@
 
 using namespace std;
 int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
-string yourjob;
+string yourjob, gender, Name;
 
 void phase1(){
  time_t now = time(0);
@@ -253,13 +253,15 @@ cout << "You can only form families before 40,"<<endl;
 cout << "and you will end your life at 65."<<endl;
 cout << "Treasure your time and start your life!"<<endl;
 for (ages=22;ages<66;ages++){
-int rannn = (int) rand() / (RAND_MAX+5);
- if (Gender=="F"){
- if (rannn==3)
- Femalepartner(Name);}
- if Gender=="M"{
- if (rannn==3)
- Malepartner(Name);}
+ srand(time(NULL));
+ int min = 0, max = 5;
+ int rannn = rand()%(max-min+1)+min;
+ if (gender=="F"){
+ if (rannn==3){
+ Femalepartner();}}
+ if (gender=="M"){
+ if (rannn==3){
+ Malepartner();}}
  cout << "You are now " << ages;
  if (ages==30){
  cout << "Congradualations! You have done a great job, you have now became the senior "<< yourjob << ", well done and keep going!";}
@@ -417,7 +419,7 @@ cout << "    -V-     "<<endl;
 cout << "     -      "<<endl;
 }
 
-void Femalepartner(Name){
+void Femalepartner(){
 int min = 0;
 int max = 4;
 int word = rand() % (max - min + 1) + min
@@ -461,7 +463,7 @@ if (YESNO=="Yes"){
 Partner+=1}
 }
 
-void Malepartner(Name){
+void Malepartner(){
 if (word==0){
 partnername="Lily";}
 if (word==1){
@@ -548,10 +550,8 @@ cout << "Welcome to Life Simulation！" << endl;
 cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn.!";
 cout << "If you would like to call the menu, save or load the game, please type MENU and enter.";
 cout << "Now, please choose a name for yourself.";
-string Name;
 cin >> Name;
-cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M.";
-string gender;
+cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M." << endl;
 cin >> gender;
 if (gender != "F" | gender != "M"){
  cout << "Choose Female by typing F. Choose Male by typing M." << endl;
