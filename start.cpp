@@ -386,10 +386,10 @@ void phase1() {
     cout << "Reading" << endl;
     string activity;
     for (int i = 1; i <= 6; i++) {
-				ages = i;
+	ages = i;
         cout << "You are " << i << " years old now! Please choose an activities to enrich life." << endl;
-				int j = 0;
-				while (j == 0){
+	int j = 0;
+	while (j == 0){
 	        cout << "Playing_with_other_children" << endl;
 	        cout << "Watching_TV" << endl;
 	        cout << "Reading" << endl;
@@ -417,11 +417,11 @@ void phase2() {
     cout << "You are now at the age of going for the primary school." << endl;
 		string activity;
     for (int i = 7; i <= 12; i++) {
-				ages = i;
+	ages = i;
         cout << "You are " << i << " years old now! You may choose an activities as extracurricular activities." << endl;
-				int j = 0;
-				while(j == 0){
-					if (Academic_performance >= -10) {
+	int j = 0;
+	while(j == 0){
+		if (Academic_performance >= -10) {
 	            cout << "Cultivating_a_hobby" << endl;
 	            cout << "Playing_with_friends" << endl;
 	            cout << "Watching_TV" << endl;
@@ -440,52 +440,52 @@ void phase2() {
 	        }
 	        else if (activity == "Playing_with_friends") {
 	            Playing_with_friends();
-							j = 1;
+		    j = 1;
 	        }
-					else if (activity == "Watching_TV") {
+		else if (activity == "Watching_TV") {
 	            if (Academic_performance >= -10) {
 	                Watching_TV();
-									if (Academic_performance < -10) {
+			if (Academic_performance < -10) {
 	                    bad_performance();
-									}
-									j = 1;
-							}
+			}
+			j = 1;
+		    }
 	            else{
 	                cout << "You cannot choose this option, becuase of your bad academic performance(;-;), please choose again." << endl;
 	            }
 	        }
 	        else if (activity == "Reading") {
 	            Reading();
-							j = 1;
+		    j = 1;
 	        }
-					else if (activity == "Playing_computer_games") {
+		else if (activity == "Playing_computer_games") {
 	            if (Academic_performance >= -10) {
 	                Playing_computer();
 	                if (Academic_performance < -10) {
 	                    bad_performance();
 	                }
-									j = 1;
+			j = 1;
 	            }
-							else{
-								cout << "You cannot choose this option, becuase of your bad academic performance(;-;), please choose again." << endl;
-							}
-					}
+		    else{
+			cout << "You cannot choose this option, becuase of your bad academic performance(;-;), please choose again." << endl;
+		    }
+		}
 	        else {
 	            cout << "Please choose from the given activities.^-^" << endl;
 	        }
-			}
-		}
+	  }
+     }  
 }
 
 void phase3() {
     cout << " " << endl;
-		string activity;
+    string activity;
     for (int i = 13; i <= 18; i++) {
-			  ages = i;
+	ages = i;
         cout << "You are " << i << " years old now! You may choose following activities as an extracurricular activities." << endl;
-				int j=0;
-				while (j == 0){
-					if (Academic_performance >= -10) {
+	int j=0;
+	while (j == 0){
+		if (Academic_performance >= -10) {
 	            cout << "Studying" << endl;
 	            cout << "Cultivating_a_hobby" << endl;
 	            cout << "Playing_with_friends" << endl;
@@ -525,11 +525,11 @@ void phase3() {
 	        else if (activity == "Watching_TV") {
 	            if (Academic_performance >= -10) {
 	                Watching_TV();
-									if (Academic_performance < -10) {
+			if (Academic_performance < -10) {
 	                    bad_performance();
-									}
-									j = 1;
-							}
+			}
+			j = 1;
+		    }
 	            else{
 	                cout << "You cannot choose this option, becuase of your bad academic performance(;-;), please choose again." << endl;
 	            }
@@ -540,16 +540,16 @@ void phase3() {
 	                if (Academic_performance < -10) {
 	                    bad_performance();
 	                }
-									j = 1;
+			j = 1;
 	            }
-							else{
-								cout << "You cannot choose this option, becuase of your bad academic performance(;-;), please choose again." << endl;
+		    else{
+			cout << "You cannot choose this option, becuase of your bad academic performance(;-;), please choose again." << endl;
 							}
 					}
 	        else {
 	             cout << "Please choose from the given activities.^-^" << endl;
 	        }
-				}
+	}
     }
 }
 
