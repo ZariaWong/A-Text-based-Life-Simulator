@@ -166,33 +166,37 @@ void phase4(){
     cin >> major;
     while (major != "IBGM" && major != "MBBS" && major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
       cout << "There is no such major, please input again." << endl;
-						cout << "You decide to major in: ";
+      cout << "You decide to major in: ";
       cin >> major;
-						cout << endl;
+      cout << endl;
     }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
   if (Academic_performance >= 80 && Academic_performance < 100){
     cout << "After graduating from high school, you enter a top University with excellent grades."<< endl;
-    cout << "You decide to major in:" << eldl;
+    cout << "You decide to major in:" << endl;
     cout << "(Please choose from the following majors)" << endl;
     cout << "Business   Social_Science   Arts   Science";
     cin >> major;
     while (major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
-      cout << "There is no such major, please input again."
+      cout << "There is no such major, please input again." << endl;
+      cout << "You decide to major in: ";
       cin >> major;
+      cout << endl;
     }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
   if (Academic_performance >= 50 && Academic_performance < 80){
     cout << "After graduating from high school, you enter a normal University."<< endl;
-    cout << "You decide to major in:" << eldl;
+    cout << "You decide to major in:" << endl;
     cout << "(Please choose from the following majors)" << endl;
     cout << "Business   Social_Science   Arts   Science";
     cin >> major;
     while (major != "Business" && major != "Social_Science" && major != "Arts" && major != "Science"){
-      cout << "There is no such major, please input again."
+      cout << "There is no such major, please input again." << endl;
+      cout << "You decide to major in: ";
       cin >> major;
+      cout << endl;
     }
     cout << "Congratulations! Now you are an undergraduate majoring in " << major << "." << endl;
   }
