@@ -236,7 +236,7 @@ void phase4(){
 
 
 
-int main{
+int main(){
 cout << "Welcome to Life Simulation！" << endl;
 cout << "In this game, you can determine the role’s life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn.!";
 cout << "If you would like to call the menu, save or load the game, please type MENU and enter.";
@@ -246,13 +246,13 @@ cin >> Name;
 cout << "Now, please choose your gender. Choose Female by typing F. Choose Male by typing M.";
 string gender;
 cin >> gender;
-for (gender != "F" | gender != "M"){
- cout << "Choose Female by typing F. Choose Male by typing M.";
+if (gender != "F" | gender != "M"){
+ cout << "Choose Female by typing F. Choose Male by typing M." << endl;
  cin >> gender;}
-cout <<"Now, lets look at the faces:";
-char images;
-images="4"
-for ( images!=1 | images !=2 | images!=3 ){
+cout <<"Now, lets look at the faces:" << endl;
+int images;
+images= 4;
+if ( images!=1 || images !=2 || images!=3 ){
   image1();
   image2();
   image3();
