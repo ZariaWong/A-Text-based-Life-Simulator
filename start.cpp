@@ -4,7 +4,7 @@
 #include <life.h>
 using namespace std;
 int partner=0, ages=22, Cooking_sense=0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild=0, mchild=0;
-
+string yourjob;
 void phase1(){
  time_t now = time(0);
  char* dt = ctime(&now);
@@ -252,13 +252,23 @@ for (ages=22;ages<66;ages++){
 int rannn = (int) rand() / (RAND_MAX+5);
  if (Gender=="F"){
  if (rannn==3)
- Femalepartner(Name)}
+ Femalepartner(Name);}
  if Gender=="M"{
  if (rannn==3)
- Malepartner(Name)}
+ Malepartner(Name);}
  cout << "You are now " << ages;
+ if (ages==30){
+ cout << "Congradualations! You have done a great job, you have now became the senior "<< yourjob << ", well done and keep going!";}
+ if (ages==38){
+ cout << "Congradualations! You have done a great job, you have now became the manager, go on!";}
+ if (ages==50){
+ cout << "Congradualations! You have done a great job, you have now became the preseident, you have finally attained some achievements in career now!";}
+ if (ages==55){
+ cout << "You have became the consultant and mainly give people advices!";}
+ if (ages==60){
+ cout << "You finally feel tired and decided to retire from your work!";}
  char action;
- action="lalala"
+ action="lalala";
  for (action!="Entertainment"| action!="Part time"| action!="Family"|action!="Interest classes" ){
    cout << "You can commit one of the following actions"<<endl;
    cout << "Entertainment"<<endl;
@@ -347,14 +357,17 @@ int rannn = (int) rand() / (RAND_MAX+5);
    cout << "You can commit one of the following actions"<<endl;
    cout << "Parents"<<endl;
    if (Partner==1){
-   cout << "Partner"<<endl;}
+   cout << "Date"<<endl;
+   cout << "Have a baby"<<endl;}
    if (Child>=1){
    cout << "Children/Child"<<endl;}
    cout << "Please type your action:"<<endl;
    cin >> familyaction;}
    if (familyaction=="Parents"){
    cout << "You love spending time with your mum and dad." <<endl;}
-   if (familyaction=="Partner"){
+   if (familyaction=="Date"){
+   Date();}
+   if (familyaction=="Have a baby"){
    cout << "Let's have a child together!" <<endl;
    int rannd = (int) rand() / (RAND_MAX+8);
    if (rannd == 3){
@@ -450,7 +463,7 @@ if (word==3){
 partnername="Macy";}
 if (word==4){
 partnername="Ana";}
-}
+
 
 int job = (int) rand() / (RAND_MAX+5);
 string job;
@@ -487,11 +500,10 @@ if (wordings==2){
 if (wordings==3){
 "You want a son or a daughther?"}
 if (wordings==4){
-"I would like to go Hawaii in our honeymoon!"}
+"I would like to go Hawaii"}
 }
 
 void Career(){
-string yourjob;
 cout << "Please choose from the following jobs/further studies"<<endl;
 if (Academic performance >= 200 && intelligence >= 60){
 cout << "Ph.D" <<endl;}
