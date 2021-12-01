@@ -25,38 +25,36 @@ partnername="William";}
 if (word==4){
 partnername="Harry";}
 
-
-int min = 0;
-int max = 4;
-int word = rand() % (max - min + 1) + min
+int jobs = rand() % (max - min + 1) + min
 string job;
-if (word==0){
+if (jobs==0){
 job="Nurse.";}
-if (word==1){
+if (jobs==1){
 job="Software engineer.";}
-if (word==2){
+if (jobs==2){
 job="Lawyer.";}
-if (word==3){
+if (jobs==3){
 job="Flight attendant.";}
-if (word==4){
+if (jobs==4){
 job="Writer.";}
 
 cout << "Hi" << Name << ", I am " << partnername << endl;
 cout << "I am a " << job <<endl;
 cout << "I love you! Please be my girlfriend!" << endl;
-char YESNO;
+string YESNO;
 YESNO="NIL";
-for (YESNO!="Yes"| YESNO!="No"){
+if (YESNO!="Yes"|| YESNO!="No"){
   cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
   cin >> YESNO;}
 if (YESNO=="Yes"){
-Partner+=1;}
+partner+=1;}
 }
 
 void Malepartner(){
-int min = -1, max = 5;
+int min = 0, max = 4;
 srand(time(NULL));
 int word = rand()%(max-min+1)+min;
+string partnername;
 if (word==0){
 partnername="Lily";}
 if (word==1){
@@ -85,13 +83,13 @@ job="Writer.";}
 cout << "Hi" << Name << ", I am " << partnername << endl;
 cout << "I am a " << job <<endl;
 cout << "Would you like to be my boyfriend?" << endl;
-char YESNO;
+string YESNO;
 YESNO="NIL";
-for (YESNO!="Yes"| YESNO!="No"){
+if (YESNO!="Yes"|| YESNO!="No"){
   cout << "Please type Yes for accepting, and No for rejecting!"<<endl;
   cin >> YESNO;}
 if (YESNO=="Yes"){
-Partner+=1;}
+partner+=1;}
 }
 
 void Date(){
