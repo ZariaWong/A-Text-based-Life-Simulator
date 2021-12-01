@@ -72,3 +72,4 @@ void bad_performance(){
   cout << "Your parents are unhappy and forbid you to play computer games or watch TV." << endl;
   cout << "(You are not allowed to choose these two option in the next round)";
 }
+
