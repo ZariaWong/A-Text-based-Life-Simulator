@@ -7,11 +7,11 @@ using namespace std;
 
 int Social_skills = 0, Curiosity = 0, Intelligence = 0,Artistic_sense = 0; Academic_performance = 0, Competitiveness = 0;
 
-int random(int min, int y){
+int random(int min, int max){
   srand(time(NULL));
   // generate a random int within [min, max]
   int random = rand()%(max-min+1)+min;
-  return ramdom;
+  return random;
 }
 
 Void Playing_with_friends (){
