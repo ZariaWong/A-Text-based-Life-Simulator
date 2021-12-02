@@ -1,7 +1,7 @@
 life.o: life.cpp life.h
       g++ -c life.cpp
       
-start.o: start.cpp life.h 
+start.o: start.cpp life.h menu.h
       g++ -c start.cpp
       
 menu.o: menu.cpp menu.h
