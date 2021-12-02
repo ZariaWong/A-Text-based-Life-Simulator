@@ -19,8 +19,6 @@ void save(){
   cout << "*******************" << endl;
 }
 
-
-// read from file (load/ start)
 void exitmenu(){
   ifstream fin;
   fin.open("output.txt");
@@ -28,8 +26,6 @@ void exitmenu(){
     cout << "Error in file opening!" << endl;
     exit(1);
   }
-  
-   
   fin >> name >> partner >> ages >> Cooking_sense >> Social_skills >> Curiosity >> Intelligence >> Artistic_sense >> Academic_performance >> Competitiveness;
   fin.close();
 }
@@ -41,7 +37,7 @@ void restart(){
   reuturn 0;
 }
 
-int exit(){
+int exitgame(){
   cout << "Exiting. Welcome to continue next time!" << endl;
   cout << "               _______________________ " << endl;
   cout << "     =    =    | Exiting. Welcome to  |" << endl;
@@ -52,7 +48,7 @@ int exit(){
 
 void DrawMenu(){
   cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
-  cout << "|                      Life Simulation                      |" << endl;
+  cout << "|    ------------------Life Simulation------------------    |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                           Save                            |" << endl;
   cout << "|                                                           |" << endl;
@@ -62,7 +58,7 @@ void DrawMenu(){
   cout << "|                                                           |" << endl;
   cout << "|                         Exit Menu                         |" << endl;
   cout << "|                                                           |" << endl;	
-  cout << "|      *Please type the option that you want to choose*     |" << endl;
+  cout << "|      *Please type the option that you want to choose:*    |" << endl;
   cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
   cout << "                                       Designer: Zaria, Wadi" << endl;
 		
