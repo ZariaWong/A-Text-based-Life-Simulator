@@ -294,7 +294,7 @@ void phase1() {
     string activity;
     for (int i = 1; i <= 6; i++) {
 				ages = i;
-        cout << "You are " << i << " years old now! Please choose an activities to enrich life." << endl;
+        cout << "You are " << i << " years old now! Please choose an activity to enrich life." << endl;
         cout << "Playing with other children" << endl;
         cout << "Watching TV" << endl;
         cout << "Reading" << endl;
@@ -309,7 +309,7 @@ void phase1() {
             Reading();
         }
         else {
-            cout << "Please choose the given activities." << endl;
+            cout << "Please choose an activity to enrich life." << endl;
         }
     }
 }
@@ -321,7 +321,7 @@ void phase2() {
 		string activity;
     for (int i = 7; i <= 12; i++) {
 				ages = i;
-        cout << "You are " << i << " years old now! You may choose an activities as extracurricular activities." << endl;
+        cout << "You are " << i << " years old now! Please choose an activity to enrich life." << endl;
         if (Academic_performance >= -10) {
             cout << "Cultivating a hobby" << endl;
             cout << "Playing with friends" << endl;
