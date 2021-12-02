@@ -13,14 +13,14 @@ void save(){
     cout << "Please make sure that output.txt is included in the folder." << endl;
     exit(1);
   }
-  fout << name << endl;
+  fout << Name << endl;
   fout << partner << ages << Cooking_sense << Social_skills << Curiosity << Intelligence << Artistic_sense << Academic_performance << Competitiveness << endl;
   for (int i=0; i < child.size(); i++){
 	fout << child[i].gender << endl;
-	fout << child[i].age << endl;
-  } 
+	fout << child[i].birth_year << endl;
+  }
   fout.close();
-	
+
   cout << "*******************" << endl;
   cout << "Successfully saved!" << endl;
   cout << "*******************" << endl;
@@ -33,33 +33,31 @@ void exitmenu(){
     cout << "Error in file opening!" << endl;
     exit(1);
   }
-  fin >> name >> partner >> ages >> Cooking_sense >> Social_skills >> Curiosity >> Intelligence >> Artistic_sense >> Academic_performance >> Competitiveness;
+  fin >> Name >> partner >> ages >> Cooking_sense >> Social_skills >> Curiosity >> Intelligence >> Artistic_sense >> Academic_performance >> Competitiveness;
   for (int i= 0; i < (fchild+mchild); i++){
 	Children c;
-	fin >> c.gender >> c.age;
+	fin >> c.gender >> c.birth_year;
 	child.push_back(c);
   }
   fin.close();
 }
 
 void restart(){
-  int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
-  string Name;
-  char gender;
-  reuturn 0;
+  partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
+  string Name = "";
+  char gender = ' ';
 }
 
-int exitgame(){
+void exitgame(int &count){
   cout << "Exiting. Welcome to continue next time!" << endl;
   cout << "               _______________________ " << endl;
   cout << "     =    =    | Exiting. Welcome to  |" << endl;
-  cout << "     ^____^    |_continue next time!!_|" << endl;
-  cout << "      \__/     /" << endl;
-  return 1;
+  cout << "     ^ __ ^    |_continue next time!!_|" << endl;
+  count = 1;
 }
 
 void DrawMenu(){
-  cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
+  cout << " â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-ââ-â-â-â-â-â-" << endl;
   cout << "|    ------------------Life Simulation------------------    |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                           Save                            |" << endl;
@@ -69,10 +67,10 @@ void DrawMenu(){
   cout << "|                         Exit Game                         |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                         Exit Menu                         |" << endl;
-  cout << "|                                                           |" << endl;	
+  cout << "|                                                           |" << endl;
   cout << "|      *Please type the option that you want to choose:*    |" << endl;
-  cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
+  cout << " â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-â-ââ-â-â-â-â-â-â-" << endl;
   cout << "                                       Designer: Zaria, Wadi" << endl;
-		
+
 }
 
