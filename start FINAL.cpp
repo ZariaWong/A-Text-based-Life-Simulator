@@ -11,6 +11,7 @@ int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, 
 string Name;
 string yourjob;
 char gender,images;
+int count = 0; // sign of exiting game
 
 class Children {
 public:
@@ -21,7 +22,7 @@ vector<Children> child;
 
 
 // The Menu will be called at the end of every year
-int Menu(){
+void Menu(){
 	DramMenu();
 	string choice;
 	cin >> choice;
@@ -35,7 +36,7 @@ int Menu(){
 	if (choice=="Exit Menu"){
 		exitmenu();}
 	if (choice=="Exit Game"){
-		exit();}
+		count = exit();}
 	return 0;}
 
 // This function is a random value generator
@@ -750,7 +751,7 @@ void phase5() {
 
 //The main function allows users to set names and choose faces
 int main(){
-int x = 0; // sign of exiting game
+string MENU;
 cout << "Welcome to Life Simulation!!" << endl;
 cout << "In this game, you can determine the roles life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn!" << endl;
 cout << "If you would like to call the menu, save or load the game, please type MENU and enter." << endl;
@@ -793,6 +794,7 @@ else if (ages >= 7 && ages <= 12){
                 Menu()}
 	if ( count = 1){
 		exit(1);
+		count = 0;
 	}
 }
 else if (ages >=13 && ages <= 18){
@@ -804,6 +806,7 @@ else if (ages >=13 && ages <= 18){
                 Menu()}
 	if ( count = 1){
 		exit(1);
+		count = 0;
 	}
 }
 else if (ages >= 19 && ages <= 22){
@@ -815,6 +818,7 @@ else if (ages >= 19 && ages <= 22){
                 Menu()}
 	if ( count = 1){
 		exit(1);
+		count = 0;
 	}
 else if (ages >= 23){
 	phase5();
@@ -825,6 +829,7 @@ else if (ages >= 23){
                 Menu()}
 	if ( count = 1){
 		exit(1);
+		count = 0;
 	}
 }
 }
