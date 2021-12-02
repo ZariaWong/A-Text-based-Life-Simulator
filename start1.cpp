@@ -720,13 +720,10 @@ void phase5() {
 
         cout << ""<<endl;
         cout << "Please type MENU if you would like to call the menu." << endl;
-				cout << ""<<endl;
-			}/*
+		cout << ""<<endl;
                 if (cin >> MENU){
-              DrawMenu();
-              Chioce(int &x);
-            }
-            */
+                Menu()}
+    }
         cout << "You are now 65 years old." << endl;
         cout << " You have came to the end of your life." << endl;
         cout << "Hope that you all get a fruitful life" << endl;
