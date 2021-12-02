@@ -10,7 +10,23 @@ string Name;
 string yourjob;
 char gender,images;
 
-
+int Menu(){
+	DramMenu();
+	string choice;
+	cin >> choice;
+	while (choice!="Start" && choice!="Save" && choice !="Restart" && choice!="Exit"){
+		cout <<""<<endl;
+		cout << "Please type the option that you want to choose"<<endl;}
+	if (choice=="Save"){
+		save();}
+	if (choice=="Restart"){
+		restart();}
+	if (choice=="Exit Menu"){
+		exitmenu();}
+	if (choice=="Exit Game"){
+		exit();}
+	return 0;}
+		
 int random(int min, int max) {
 	srand(time(NULL));
 	// generate a random int within [min, max]
