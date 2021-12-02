@@ -5,11 +5,20 @@
 #include <stdlib.h>
 #include <time.h>
 #include <menu.h>
+#include <vector>
 using namespace std;
 int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
 string Name;
 string yourjob;
 char gender,images;
+
+class Children {
+public:
+	string gender;
+	int birth_year;
+};
+vector<Children> child;
+
 
 // The Menu will be called at the end of every year
 int Menu(){
@@ -689,9 +698,8 @@ void phase5() {
                 int min = 0, max = 3;
                 int rannd = rand() % (max - min + 1) + min;
                 if (rannd == 3) {
-                    fchild += 1;
-                    cout << "Congradualations! You get a baby girl!" << endl;
-			fchild+=1;
+			fchild += 1;
+                        cout << "Congradualations! You get a baby girl!" << endl;
 			cout << "She looks similar to you!!"<<endl;
 			if (images == '1') {
 			image1();}
@@ -699,6 +707,13 @@ void phase5() {
 			image2();}
 			if (images == '3') {
 			image3();}
+			Children c;
+			c.gender = "female";
+			// calculate children's year of birth
+			time_t now = time(0);
+			tm *ltm = localtime(&now);
+			c.birth_year = 1900 + ltm->tm_year + ages;
+			child.push_back(c);
                 }
                 if (rannd == 4) {
                     mchild += 1;
@@ -711,6 +726,13 @@ void phase5() {
 			image2();}
 			if (images == 3) {
 			image3();}
+			Children c;
+			c.gender = "male";
+			// calculate children's year of birth
+			time_t now = time(0);
+			tm *ltm = localtime(&now);
+			c.birth_year = 1900 + ltm->tm_year + ages;
+			child.push_back(c);
                 }
             }
             if (familyaction == "Children/Child") {
