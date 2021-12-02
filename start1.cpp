@@ -11,6 +11,7 @@ string Name;
 string yourjob;
 char gender,images;
 
+// The Menu will be called at the end of every year
 int Menu(){
 	DramMenu();
 	string choice;
@@ -27,7 +28,8 @@ int Menu(){
 	if (choice=="Exit Game"){
 		exit();}
 	return 0;}
-		
+
+// This function is a random value generator
 int random(int min, int max) {
 	srand(time(NULL));
 	// generate a random int within [min, max]
@@ -35,65 +37,53 @@ int random(int min, int max) {
 	return random;
 }
 
+//The below functions will be used in Phase 1 to 4
 void Playing_with_friends() {
 	Social_skills += random(5, 10);
 }
-
 void Watching_TV() {
 	Curiosity += 10;
 	Academic_performance -= random(0, 5);
 }
-
 void Reading() {
 	Intelligence += random(5, 10);
 	Academic_performance += random(5, 10);
 }
-
 void Cultivating_hobbies() {
 	Artistic_sense += 10;
 }
-
 void Playing_computer() {
 	Academic_performance -= random(5, 10);
 	Intelligence += random(0, 5);
 }
-
 void Studying() {
 	Academic_performance += random(15, 20);
 }
-
 void Writing() {
 	Artistic_sense += 10;
-
 }
-
 void Internship() {
 	Competitiveness += random(10, 15);
 }
-
 void Competition() {
 	Competitiveness += random(5, 10);
 	Intelligence += random(5, 10);
 	Academic_performance += random(0, 5);
 }
-
 void Hall_activities() {
 	Social_skills += random(10, 15);
 	Artistic_sense += random(5, 10);
 }
-
 void Parties() {
 	Social_skills += random(10, 15);
 	Academic_performance -= random(5, 10);
 	Competitiveness -= random(0, 5);
 }
-
 void bad_performance() {
 	cout << "Your grades drop due to indugling in entertainment." << endl;
 	cout << "Your parents are unhappy and forbid you to play computer games or watch TV." << endl;
 	cout << "(You are not allowed to choose these two option in the next round)";
 }
-
 /*
 void Date() {
     if (wordings == 0) {
@@ -114,6 +104,7 @@ void Date() {
 }
 */
 
+// The functions of Femalepartner and Malepartner will be used to generate random partner in phase 5
 void Femalepartner() {
 	  int min = 0, max = 4;
 		srand(time(NULL));
@@ -223,7 +214,7 @@ void Malepartner() {
 
 }
 
-// face images for players
+// Below are the 3 images for players to choose from
 void image1() {
     cout << "HHHHHHHHHHHH" << endl;
     cout << "HH O HH O HH" << endl;
@@ -251,6 +242,7 @@ void image3() {
     cout <<""<<endl;
 }
 
+// The career function is used for chossing future path in phase 5
 string Career() {
     string yourjob;
     cout << "Please choose from the following jobs/further studies" << endl;
@@ -280,7 +272,7 @@ string Career() {
     cout << "Circus performers" << endl;
     cout << "Basketball player" << endl;
 
-		while (yourjob!="Ph.D" &&yourjob!="MA" &&yourjob!="Insurance Sales" &&yourjob!="Investment banking front office" &&yourjob!="Programming" &&yourjob!="Online Game Design" &&yourjob!="Waiter" &&yourjob!="Waitress" &&yourjob!="Waiter/Waitress" &&yourjob!="Artist" &&yourjob!="Writer" && yourjob!="Journalist" &&yourjob!="Circus performers" &&yourjob!="Basketball player"){
+while (yourjob!="Ph.D" &&yourjob!="MA" &&yourjob!="Insurance Sales" &&yourjob!="Investment banking front office" &&yourjob!="Programming" &&yourjob!="Online Game Design" &&yourjob!="Waiter" &&yourjob!="Waitress" &&yourjob!="Waiter/Waitress" &&yourjob!="Artist" &&yourjob!="Writer" && yourjob!="Journalist" &&yourjob!="Circus performers" &&yourjob!="Basketball player"){
     cout << "Please type the job you would like to choose:" << endl;
     cin >> yourjob;
 	}
@@ -735,7 +727,7 @@ void phase5() {
 
 }
 
-
+//The main function allows users to set names and choose faces
 int main(){
 int x = 0; // sign of exiting game
 cout << "Welcome to Life Simulation!!" << endl;
