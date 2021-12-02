@@ -5,7 +5,7 @@ start.o: start.cpp life.h menu.h
       g++ -c start.cpp
       
 menu.o: menu.cpp menu.h
-      g++ -c start.cpp
+      g++ -c menu.cpp
 
 start: life.o start.o menu.o
       g++ life.o start.o menu.o -o start
