@@ -35,7 +35,10 @@ void start(){
 }
 
 void restart(){
-  
+  int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
+  string Name;
+  char gender;
+  reuturn 0;
 }
 
 int exit(){
@@ -71,13 +74,15 @@ int main(){
 	cin >> choice;
 	while (choice!="Start" && choice!="Save" && choice !="Restart" && choice!="Exit"){
 		cout <<""<<endl;
-		cout << "Please type the option that you want to choose<<endl;}
+		cout << "Please type the option that you want to choose"<<endl;}
 	if (choice=="Save"){
 		save();}
 	if (choice=="Restart"){
 		restart();}
-	if (choice=="Exit Menu"){}
-	if (choice=="Exit Game"){}
+	if (choice=="Exit Menu"){
+		exitmenu();j bn      }
+	if (choice=="Exit Game"){
 		exit();}
+	return 0;}
 		
 	    
