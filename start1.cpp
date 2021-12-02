@@ -378,7 +378,7 @@ void phase3() {
 		string activity;
     for (int i = 13; i <= 18; i++) {
 			  ages = i;
-        cout << "You are " << i << " years old now! You may choose following activities as an extracurricular activities." << endl;
+        cout << "You are " << i << " years old now! Please choose following activities:" << endl;
         if (Academic_performance >= -10) {
             cout << "Studying" << endl;
             cout << "Cultivating a hobby" << endl;
@@ -490,7 +490,7 @@ void phase4() {
     cout << "After going to  university, you have more free time and decide to focus on two things every year to improve yourself." << endl;
     for (int i = 1; i <= 4; i++) {
 				ages += i;
-        cout << "Now, you are a year " << i << " student�� please choose two of the following activities to participate." << endl;
+        cout << "Now, you are a year " << i << " student!! please choose two of the following activities to participate." << endl;
         cout << "Studying  Internship  Competition  Hall_activities  Go_to_parties" << endl;
         cout << "activity 1: ";
         cin >> activity_1;
