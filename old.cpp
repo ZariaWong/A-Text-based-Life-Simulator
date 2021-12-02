@@ -10,6 +10,43 @@ int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, 
 string Name;
 char gender;
 
+
+// vector
+#include <vector>
+
+class Children {
+public:
+	string gender;
+	int birth_year;
+};
+vector<Children> child;
+
+int main(){
+	Children c;
+	c.gender = 
+	// calculate children's year of birth
+	time_t now = time(0);
+	tm *ltm = localtime(&now);
+	c.birth_year = 1900 + ltm->tm_year + ages;
+	child.push_back(c);
+	
+
+
+for (int i=0; i < child.size(); i++){
+	fout << child[i].gender << endl;
+	fout << child[i].age << endl;
+}
+	
+for (int i= 0; i < (fchild+mchild); i++){
+	Children c;
+	fin >> c.gender >> c.age;
+	child.push_back(c);
+}
+
+
+	
+	
+	
 int random(int min, int max) {
 	srand(time(NULL));
 	// generate a random int within [min, max]
