@@ -241,7 +241,7 @@ string Career() {
 		return yourjob;
 }
 
-
+// phase1: 1-6 years old
 void phase1() {
     time_t now = time(0);
     char* dt = ctime(&now);
@@ -281,6 +281,7 @@ void phase1() {
     }
 }
 
+//phase2: 7-12 years old (primary school)
 void phase2() {
     cout << "You are now at the age of going for the primary school." << endl;
 		string activity;
@@ -345,6 +346,7 @@ void phase2() {
      }  
 }
 
+//phase3: 13-18 years old (middle school & high school)
 void phase3() {
     cout << " " << endl;
     string activity;
@@ -421,7 +423,7 @@ void phase3() {
     }
 }
 
-
+//phase4: 19-22 years old (university)
 void phase4() {
     string major, activity_1, activity_2;
     if (Academic_performance >= 100) {
@@ -502,7 +504,7 @@ void phase4() {
     }
 }
 
-
+//phase5: 22-65 years old (after graduation)
 void phase5() {
 		string yourjob;
     cout << "Happy Graduation!!!" << endl;
@@ -686,6 +688,7 @@ void phase5() {
 }
 
 
+// face image for playesrs
 void image1() {
     cout << "1" << endl;
     cout << "HHHHHHHHHHHH" << endl;
