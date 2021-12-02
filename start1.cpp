@@ -4,143 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//#include <menu.h>
 using namespace std;
 int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
 string Name;
 string yourjob;
 char gender,images;
-
-/*
-#pragma once
-#include <windows.h>
-#include <conio.h>
-#include<ctime>
-#pragma comment(lib,"winmm.lib")
-
-
-void Pos(int x, int y);
-void HideCursor();
-
-int Menu_Examine = 0;			//avoid menu be repeatedly printed
-void DrawMenu()					//print the menu
-{
-	void HideCursor();
-	if (Menu_Examine == 0)
-	{
-		Menu_Examine = 1;
-		for (int i = 5; i > 0; i--)
-		{
-			printf("\n");
-		}
-		printf("\t\t\t\t   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  \n");
-		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t |                  Life Simulation                   |\n");
-		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t |                      Start                         |\n");
-		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t |                      Save                          |\n");
-		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t |                      Restart                       |\n");
-		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t |                      Exit                          |\n");
-		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  \n");
-		printf("\t\t\t\t                                 Designer: Zaria, Wadi");
-	}
-}
-
-void Chioce(int& x)
-{
-	void HideCursor();
-	static char n = '1';
-	if (_kbhit())
-	{
-		char temp = _getch();	//temporary variable stores the entered value
-		if ((n == '1') && (temp == 'w'))
-		{
-			n = '1';			//can't scroll up when choosing '1'
-		}
-		else if ((n == '1') && (temp == 's'))
-		{
-			n = '2';
-		}
-		else if ((n == '4') && (temp == 'w'))
-		{
-			n = '1';
-		}
-		else if ((n == '4') && (temp == 's'))
-		{
-			n = '4';			//can't scroll down when choosing '4'
-		}
-		else if ((temp == ' ') && (n == '1'))
-		{
-			x = 2;				//load the game
-			return;
-		}
-		else if ((temp == ' ') && (n == '2'))
-		{
-			x = 3;
-			return;
-		}
-		else if ((temp == ' ') && (n == '3'))
-		{
-			x = 4;
-			return;
-		}
-		else if ((temp == ' ') && (n == '4'))
-		{
-			exit(0);			//exit
-		}
-	}
-	switch (n)
-	{
-	case '1':					//slect cursor points to   Start  
-		Pos(52, 9);
-		cout << "  ";
-		Pos(52, 11);
-		cout << "  ";
-		Pos(52, 13);
-		cout << "  ";
-		Pos(52, 15);
-		cout << "  ";
-		break;
-	case '2':					//slect cursor points to   Save  
-		Pos(52, 9);
-		cout << "  ";
-		Pos(52, 11);
-		cout << "  ";
-		Pos(52, 13);
-		cout << "  ";
-		Pos(52, 15);
-		cout << "  ";
-		break;
-	case '3':					//slect cursor points to   Restart  
-		Pos(52, 9);
-		cout << "  ";
-		Pos(52, 11);
-		cout << "  ";
-		Pos(52, 13);
-		cout << "  ";
-		Pos(52, 15);
-		cout << "  ";
-		break;
-	case '4':					//slect cursor points to   Exit  
-		Pos(52, 9);
-		cout << "  ";
-		Pos(52, 11);
-		cout << "  ";
-		Pos(52, 13);
-		cout << "  ";
-		Pos(52, 15);
-		cout << "  ";
-		break;
-	}
-	Sleep(10);				//set the interval to avoid flickering
-}#pragma once
-
-//menu
-*/
 
 
 int random(int min, int max) {
@@ -338,6 +206,7 @@ void Malepartner() {
 
 }
 
+// face images for players
 void image1() {
     cout << "HHHHHHHHHHHH" << endl;
     cout << "HH O HH O HH" << endl;
@@ -402,6 +271,7 @@ string Career() {
 }
 
 
+// phase1: 0-6 years old
 void phase1() {
     time_t now = time(0);
     char* dt = ctime(&now);
@@ -435,6 +305,8 @@ void phase1() {
     }
 }
 
+
+// phase2: 7-12 years old (primary school)
 void phase2() {
     cout << "You are now at the age of going for the primary school." << endl;
 		string activity;
@@ -490,6 +362,8 @@ void phase2() {
     }
 }
 
+
+//phase3: 13-18 years old (middle school & high school)
 void phase3() {
     cout << " " << endl;
 		string activity;
@@ -556,6 +430,7 @@ void phase3() {
 }
 
 
+// phase4: 19-22 years old (university)
 void phase4() {
     string major, activity_1, activity_2;
     if (Academic_performance >= 100) {
@@ -606,7 +481,7 @@ void phase4() {
     cout << "After going to  university, you have more free time and decide to focus on two things every year to improve yourself." << endl;
     for (int i = 1; i <= 4; i++) {
 				ages += i;
-        cout << "Now, you are a year " << i << " student   please choose two of the following activities to participate." << endl;
+        cout << "Now, you are a year " << i << " student�� please choose two of the following activities to participate." << endl;
         cout << "Studying  Internship  Competition  Hall_activities  Go_to_parties" << endl;
         cout << "activity 1: ";
         cin >> activity_1;
@@ -636,6 +511,7 @@ void phase4() {
 }
 
 
+//phase5: >22 years old (after graduation)
 void phase5() {
     string yourjob;
     cout << "Happy Graduation!!!" << endl;
@@ -828,10 +704,6 @@ void phase5() {
 
         cout << ""<<endl;
         cout << "Please type MENU if you would like to call the menu." << endl;
-				//if (cin>>"MENU"){
-				//	DrawMenu();
-				//	Choice(x);
-				//}
 				cout << ""<<endl;
 			}/*
                 if (cin >> MENU){
@@ -840,7 +712,7 @@ void phase5() {
             }
             */
         cout << "You are now 65 years old." << endl;
-        cout << "You have came to the end of your life." << endl;
+        cout << " You have came to the end of your life." << endl;
         cout << "Hope that you all get a fruitful life" << endl;
         cout << "Welcome to start the game again to gain another life!" << endl;
 
@@ -849,6 +721,7 @@ void phase5() {
 
 
 int main(){
+int x = 0; // sign of exiting game
 cout << "Welcome to Life Simulation!!" << endl;
 cout << "In this game, you can determine the roles life by making choices. From family to career, from entertainment to life long learning, live a unique life in every turn!" << endl;
 cout << "If you would like to call the menu, save or load the game, please type MENU and enter." << endl;
@@ -871,9 +744,38 @@ while (images != '1' && images != '2' && images != '3') {
   cout << "Please choose your face!" << endl;
   cin >> images;
 }
-
+if (ages >= 0 && ages <= 6){
 	phase1();
+	menu();
+	if ( x = 1){
+		exit(1);
+	}
+}
+else if (ages >= 7 && ages <= 12){
 	phase2();
+	menu();
+	if ( x = 1){
+		exit(1);
+	}
+}
+else if (ages >=13 && ages <= 18){
 	phase3();
+	menu();
+	if ( x = 1){
+		exit(1);
+	}
+}
+else if (ages >= 19 && ages <= 22){
 	phase4();
-	phase5();}
+	menu();
+	if ( x = 1){
+		exit(1);
+	}
+else if (ages >= 23){
+	phase5();
+	menu();
+	if ( x = 1){
+		exit(1);
+	}
+}
+}
