@@ -229,7 +229,7 @@ void image1() {
     cout << "HH   II   HH" << endl;
     cout << "HH   ..   HH" << endl;
     cout << "HH        HH" << endl;
-		cout <<""<<endl;
+    cout <<""<<endl;
 }
 
 void image2() {
@@ -238,7 +238,7 @@ void image2() {
     cout << "VV 0 VV 0 VV" << endl;
     cout << "VV   @    VV" << endl;
     cout << "VVV      VVV" << endl;
-		cout <<""<<endl;
+    cout <<""<<endl ;
 }
 
 void image3() {
@@ -247,7 +247,7 @@ void image3() {
     cout << "   --^--    " << endl;
     cout << "    -V-     " << endl;
     cout << "     -      " << endl;
-		cout <<""<<endl;
+    cout <<""<<endl;
 }
 
 string Career() {
