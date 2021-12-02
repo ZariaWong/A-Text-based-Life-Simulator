@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+//#include <menu.h>
 using namespace std;
 int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
 string Name;
@@ -32,7 +33,7 @@ void DrawMenu()					//print the menu
 		{
 			printf("\n");
 		}
-		printf("\t\t\t\t ��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��\n");
+		printf("\t\t\t\t   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  \n");
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t |                  Life Simulation                   |\n");
 		printf("\t\t\t\t |                                                    |\n");
@@ -44,7 +45,7 @@ void DrawMenu()					//print the menu
 		printf("\t\t\t\t |                                                    |\n");
 		printf("\t\t\t\t |                      Exit                          |\n");
 		printf("\t\t\t\t |                                                    |\n");
-		printf("\t\t\t\t ��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��-��\n");
+		printf("\t\t\t\t   -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  \n");
 		printf("\t\t\t\t                                 Designer: Zaria, Wadi");
 	}
 }
@@ -94,9 +95,9 @@ void Chioce(int& x)
 	}
 	switch (n)
 	{
-	case '1':					//slect cursor points to ��Start��
+	case '1':					//slect cursor points to   Start  
 		Pos(52, 9);
-		cout << "��";
+		cout << "  ";
 		Pos(52, 11);
 		cout << "  ";
 		Pos(52, 13);
@@ -104,27 +105,27 @@ void Chioce(int& x)
 		Pos(52, 15);
 		cout << "  ";
 		break;
-	case '2':					//slect cursor points to ��Save��
+	case '2':					//slect cursor points to   Save  
 		Pos(52, 9);
 		cout << "  ";
 		Pos(52, 11);
-		cout << "��";
+		cout << "  ";
 		Pos(52, 13);
 		cout << "  ";
 		Pos(52, 15);
 		cout << "  ";
 		break;
-	case '3':					//slect cursor points to ��Restart��
+	case '3':					//slect cursor points to   Restart  
 		Pos(52, 9);
 		cout << "  ";
 		Pos(52, 11);
 		cout << "  ";
 		Pos(52, 13);
-		cout << "��";
+		cout << "  ";
 		Pos(52, 15);
 		cout << "  ";
 		break;
-	case '4':					//slect cursor points to ��Exit��
+	case '4':					//slect cursor points to   Exit  
 		Pos(52, 9);
 		cout << "  ";
 		Pos(52, 11);
@@ -132,7 +133,7 @@ void Chioce(int& x)
 		Pos(52, 13);
 		cout << "  ";
 		Pos(52, 15);
-		cout << "��";
+		cout << "  ";
 		break;
 	}
 	Sleep(10);				//set the interval to avoid flickering
@@ -605,7 +606,7 @@ void phase4() {
     cout << "After going to  university, you have more free time and decide to focus on two things every year to improve yourself." << endl;
     for (int i = 1; i <= 4; i++) {
 				ages += i;
-        cout << "Now, you are a year " << i << " student�� please choose two of the following activities to participate." << endl;
+        cout << "Now, you are a year " << i << " student   please choose two of the following activities to participate." << endl;
         cout << "Studying  Internship  Competition  Hall_activities  Go_to_parties" << endl;
         cout << "activity 1: ";
         cin >> activity_1;
@@ -827,6 +828,10 @@ void phase5() {
 
         cout << ""<<endl;
         cout << "Please type MENU if you would like to call the menu." << endl;
+				//if (cin>>"MENU"){
+				//	DrawMenu();
+				//	Choice(x);
+				//}
 				cout << ""<<endl;
 			}/*
                 if (cin >> MENU){
@@ -835,7 +840,7 @@ void phase5() {
             }
             */
         cout << "You are now 65 years old." << endl;
-        cout << " You have came to the end of your life." << endl;
+        cout << "You have came to the end of your life." << endl;
         cout << "Hope that you all get a fruitful life" << endl;
         cout << "Welcome to start the game again to gain another life!" << endl;
 
@@ -866,6 +871,7 @@ while (images != '1' && images != '2' && images != '3') {
   cout << "Please choose your face!" << endl;
   cin >> images;
 }
+
 	phase1();
 	phase2();
 	phase3();
