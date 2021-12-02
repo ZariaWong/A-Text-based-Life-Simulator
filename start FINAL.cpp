@@ -517,6 +517,11 @@ void phase4() {
             cout << "You cannot choose this option, please choose again." << endl;
         }
     }
+	cout << ""<<endl;
+        cout << "Please type MENU if you would like to call the menu." << endl;
+		cout << ""<<endl;
+                if (cin >> MENU){
+                Menu()}
 }
 
 
@@ -754,34 +759,29 @@ while (images != '1' && images != '2' && images != '3') {
 }
 if (ages >= 0 && ages <= 6){
 	phase1();
-	menu();
 	if ( count = 1){
 		exit(1);
 	}
 }
 else if (ages >= 7 && ages <= 12){
 	phase2();
-	menu();
 	if ( count = 1){
 		exit(1);
 	}
 }
 else if (ages >=13 && ages <= 18){
 	phase3();
-	menu();
 	if ( count = 1){
 		exit(1);
 	}
 }
 else if (ages >= 19 && ages <= 22){
 	phase4();
-	menu();
 	if ( count = 1){
 		exit(1);
 	}
 else if (ages >= 23){
 	phase5();
-	menu();
 	if ( count = 1){
 		exit(1);
 	}
