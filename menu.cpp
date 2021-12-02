@@ -21,7 +21,7 @@ void save(){
 
 
 // read from file (load/ start)
-void start(){
+void exitmenu(){
   ifstream fin;
   fin.open("output.txt");
   if (fin.fail()){
