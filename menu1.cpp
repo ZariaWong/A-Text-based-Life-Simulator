@@ -13,9 +13,13 @@ void restart(){
   
 }
 
-void exit(){
+int exit(){
   cout << "Exiting. Welcome to continue next time!" << endl;
-  
+  cout << "               _______________________ " << endl;
+  cout << "  #  =    =    | Exiting. Welcome to  |" << endl;
+  cout << "     ^____^    |_continue next time!!_|" << endl;
+  cout << "      \__/     /" << endl;
+  return 1;
 }
 
 void DrawMenu(){
