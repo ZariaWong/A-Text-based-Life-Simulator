@@ -14,7 +14,17 @@ void save(){
     exit(1);
   }
   fout << Name << endl;
-  fout << partner << ages << Cooking_sense << Social_skills << Curiosity << Intelligence << Artistic_sense << Academic_performance << Competitiveness << endl;
+  fout << gender<<endl;
+  fout << partner << endl;
+  fout << partner << endl;
+  fout <<  ages << endl;
+  fout << Cooking_sense << endl;
+  fout <<  Social_skills <<endl; 
+  fout << Curiosity << endl;
+  fout <<  Intelligence <<endl;
+  fout <<  Artistic_sense << endl;
+  fout <<  Academic_performance <<endl;
+  fout <<  Competitiveness << endl;
   for (int i=0; i < child.size(); i++){
 	fout << child[i].gender << endl;
 	fout << child[i].birth_year << endl;
