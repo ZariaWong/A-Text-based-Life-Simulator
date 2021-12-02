@@ -36,7 +36,7 @@ void save(){
   cout << "*******************" << endl;
 }
 
-void exitmenu(){
+void load(){
   ifstream fin;
   fin.open("output.txt");
   if (fin.fail()){
@@ -63,6 +63,8 @@ void exitmenu(){
   fin.close();
 }
 
+void exitmenu()
+	
 void restart(){
   partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
   string Name = "";
@@ -82,6 +84,8 @@ void DrawMenu(){
   cout << "|    ------------------Life Simulation------------------    |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                           Save                            |" << endl;
+  cout << "|                                                           |" << endl;
+  cout << "|                           Load                            |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                          Restart                          |" << endl;
   cout << "|                                                           |" << endl;
