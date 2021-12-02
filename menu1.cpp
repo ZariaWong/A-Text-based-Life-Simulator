@@ -24,17 +24,17 @@ int exit(){
 
 void DrawMenu(){
   cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
-	cout << "|                      Life Simulation                      |" << endl;
+  cout << "|                      Life Simulation                      |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                           Start                           |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                           Save                            |" << endl;
-	cout << "|                                                           |" << endl;
+  cout << "|                                                           |" << endl;
   cout << "|                          Restart                          |" << endl;
   cout << "|                                                           |" << endl;
-	cout << "|                           Exit                            |" << endl;
+  cout << "|                           Exit                            |" << endl;
   cout << "|                                                           |" << endl;
   cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
-	cout << "                                      Designer: Zaria, Wadi" << endl;
+  cout << "                                      Designer: Zaria, Wadi" << endl;
 		
 }
