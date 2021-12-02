@@ -6,7 +6,9 @@ void start(){
 }
 
 void save(){
-  
+  cout << "*******************" << endl;
+  cout << "Successfully saved!" << endl;
+  cout << "*******************" << endl;
 }
 
 void restart(){
