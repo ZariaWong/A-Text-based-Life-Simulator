@@ -80,7 +80,7 @@ int main(){
 	if (choice=="Restart"){
 		restart();}
 	if (choice=="Exit Menu"){
-		exitmenu();j bn      }
+		exitmenu();}
 	if (choice=="Exit Game"){
 		exit();}
 	return 0;}
