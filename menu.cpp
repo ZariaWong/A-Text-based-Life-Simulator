@@ -7,7 +7,7 @@ void save(){
   ofstream fout;
   fout.open("output.txt");
   if (fout.fail()){
-    cout << "Error in file openning!" << endl;
+    cout << "Please make sure that output.txt is included in the folder." << endl;
     exit(1);
   }
   fout << name << endl;
@@ -51,16 +51,33 @@ void DrawMenu(){
   cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
   cout << "|                      Life Simulation                      |" << endl;
   cout << "|                                                           |" << endl;
-  cout << "|                           Start                           |" << endl;
-  cout << "|                                                           |" << endl;
   cout << "|                           Save                            |" << endl;
   cout << "|                                                           |" << endl;
   cout << "|                          Restart                          |" << endl;
   cout << "|                                                           |" << endl;
-  cout << "|                           Exit                            |" << endl;
+  cout << "|                         Exit Game                         |" << endl;
   cout << "|                                                           |" << endl;
+  cout << "|                         Exit Menu                         |" << endl;
+  cout << "|                                                           |" << endl;	
   cout << "|      *Please type the option that you want to choose*     |" << endl;
   cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
   cout << "                                       Designer: Zaria, Wadi" << endl;
 		
 }
+
+int main(){
+	DramMenu();
+	string choice;
+	cin >> choice;
+	while (choice!="Start" && choice!="Save" && choice !="Restart" && choice!="Exit"){
+		cout <<""<<endl;
+		cout << "Please type the option that you want to choose<<endl;}
+	if (choice=="Save"){
+		save();}
+	if (choice=="Restart"){
+		restart();}
+	if (choice=="Exit Menu"){}
+	if (choice=="Exit Game"){}
+		exit();}
+		
+	    
