@@ -65,11 +65,12 @@ void load(){
 
 void exitmenu()
 	
-void restart(){
+void restart(int &count,int &restart){
   partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
   string Name = "";
   char gender = ' ';
   restart=1;
+  count = 1;
 }
 
 void exitgame(int &count){
