@@ -693,24 +693,24 @@ void phase5() {
                 if (rannd == 3) {
                     fchild += 1;
                     cout << "Congradualations! You get a baby girl!" << endl;
-										cout << "She looks similar to you!!"<<endl;
-										if (images == '1') {
-										  image1();}
-											if (images == '2') {
-											  image2();}
-											if (images == '3') {
-												 image3();}
+			cout << "She looks similar to you!!"<<endl;
+			if (images == '1') {
+			image1();}
+			if (images == '2') {
+			image2();}
+			if (images == '3') {
+			image3();}
                 }
                 if (rannd == 4) {
                     mchild += 1;
                     cout << "Congradualations! You get a baby boy!" << endl;
-										cout << "He looks similar to you!!"<<endl;
-										if (images == 1) {
-										  image1();}
-											if (images == 2) {
-											  image2();}
-											if (images == 3) {
-												 image3();}
+			cout << "He looks similar to you!!"<<endl;
+			if (images == 1) {
+			image1();}
+			if (images == 2) {
+			image2();}
+			if (images == 3) {
+			image3();}
                 }
             }
             if (familyaction == "Children/Child") {
