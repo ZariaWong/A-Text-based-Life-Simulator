@@ -164,15 +164,15 @@ void Femalepartner() {
     }
     if (YESNO == "Yes") {
         partner += 1;
-				cout <<""<<endl;
+	cout <<""<<endl;
     }
 }
 
 void Malepartner() {
-		string partnername;
-		int min = 0, max = 4;
-		srand(time(NULL));
-		int word = rand()%(max-min+1)+min;
+    string partnername;
+    int min = 0, max = 4;
+    srand(time(NULL));
+    int word = rand()%(max-min+1)+min;
     if (word == 0) {
         partnername = "Lily";
     }
