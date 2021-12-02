@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <menu.h>
 using namespace std;
 int partner = 0, ages = 0, Cooking_sense = 0, Social_skills = 0, Curiosity = 0, Intelligence = 0, Artistic_sense = 0, Academic_performance = 0, Competitiveness = 0, fchild = 0, mchild = 0;
 string Name;
@@ -693,6 +694,7 @@ void phase5() {
                 if (rannd == 3) {
                     fchild += 1;
                     cout << "Congradualations! You get a baby girl!" << endl;
+			fchild+=1;
 			cout << "She looks similar to you!!"<<endl;
 			if (images == '1') {
 			image1();}
@@ -704,6 +706,7 @@ void phase5() {
                 if (rannd == 4) {
                     mchild += 1;
                     cout << "Congradualations! You get a baby boy!" << endl;
+			mchild+=1;
 			cout << "He looks similar to you!!"<<endl;
 			if (images == 1) {
 			image1();}
