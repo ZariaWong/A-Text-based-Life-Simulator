@@ -43,7 +43,18 @@ void exitmenu(){
     cout << "Error in file opening!" << endl;
     exit(1);
   }
-  fin >> Name >> partner >> ages >> Cooking_sense >> Social_skills >> Curiosity >> Intelligence >> Artistic_sense >> Academic_performance >> Competitiveness;
+  fin  << Name << endl;
+  fin << gender<<endl;
+  fin << partner << endl;
+  fin << partner << endl;
+  fin <<  ages << endl;
+  fin << Cooking_sense << endl;
+  fin <<  Social_skills <<endl; 
+  fin << Curiosity << endl;
+  fin <<  Intelligence <<endl;
+  fin <<  Artistic_sense << endl;
+  fin <<  Academic_performance <<endl;
+  fin <<  Competitiveness << endl;
   for (int i= 0; i < (fchild+mchild); i++){
 	Children c;
 	fin >> c.gender >> c.birth_year;
