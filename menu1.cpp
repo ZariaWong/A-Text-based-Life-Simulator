@@ -36,7 +36,8 @@ void DrawMenu(){
   cout << "|                                                           |" << endl;
   cout << "|                           Exit                            |" << endl;
   cout << "|                                                           |" << endl;
+  cout << "|      *Please type the option that you want to choose*     |" << endl;
   cout << " ☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆-☆" << endl;
-  cout << "                                      Designer: Zaria, Wadi" << endl;
+  cout << "                                       Designer: Zaria, Wadi" << endl;
 		
 }
