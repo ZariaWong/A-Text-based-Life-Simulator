@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
+
 using namespace std;
 
 // write to file (save)
@@ -12,6 +14,10 @@ void save(){
   }
   fout << name << endl;
   fout << partner << ages << Cooking_sense << Social_skills << Curiosity << Intelligence << Artistic_sense << Academic_performance << Competitiveness << endl;
+  for (int i=0; i < child.size(); i++){
+	fout << child[i].gender << endl;
+	fout << child[i].age << endl;
+  } 
   fout.close();
 	
   cout << "*******************" << endl;
@@ -27,6 +33,11 @@ void exitmenu(){
     exit(1);
   }
   fin >> name >> partner >> ages >> Cooking_sense >> Social_skills >> Curiosity >> Intelligence >> Artistic_sense >> Academic_performance >> Competitiveness;
+  for (int i= 0; i < (fchild+mchild); i++){
+	Children c;
+	fin >> c.gender >> c.age;
+	child.push_back(c);
+  }
   fin.close();
 }
 
