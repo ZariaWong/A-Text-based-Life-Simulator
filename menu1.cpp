@@ -11,6 +11,7 @@ void save(){
     exit(1);
   }
   fout << name << endl;
+  fout << partner << ages << Cooking_sense << Social_skills << Curiosity << Intelligence << Artistic_sense << Academic_performance << Competitiveness << endl;
   fout.close();
 	
   cout << "*******************" << endl;
@@ -27,7 +28,9 @@ void start(){
     cout << "Error in file opening!" << endl;
     exit(1);
   }
-  fin >> 
+  
+   
+  fin >> name >> partner >> ages >> Cooking_sense >> Social_skills >> Curiosity >> Intelligence >> Artistic_sense >> Academic_performance >> Competitiveness;
   fin.close();
 }
 
