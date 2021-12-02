@@ -5,5 +5,5 @@ void save();
 void start();
 void restart();
 int exit();
-void DrawMenu()
+void DrawMenu();
 #endif
