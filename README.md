@@ -38,7 +38,11 @@
     Playing with other children (social skills += 5-10)
 
     Reading (intelligence += 5-10)
-
+    
+    Playing_computer (Academic_performance -= random(5, 10), Intelligence += random(0-5))
+    
+    Watching TV (Curiosity += 10, Academic_performance += 5-10)
+    
     -Phase 3 Junior High School & High School (12 years old - 18 years old) 
 
     [One action/year]
@@ -101,9 +105,7 @@
 
     The following activities will be generated from 22 years old to 60 years old
 
-    (Family) [A potential partner can be met randomly, i.e. Probability 0.2 every year]
-
-    -> Dating [RANDOM jobs and they would say random words when dating]
+    (Family) [A potential partner can be met randomly, i.e. Probability 0.2 every year] 
 
     -> Getting married 
 
@@ -168,3 +170,19 @@
     -(5) Players will gain random values in some actions
 
     -(2) Changes in value will be recorded in data structure
+
+4. non-standard C/C++ libraries
+
+    To construct a ramdom function, we include :
+    <stdio.h>
+    <stdlib.h>
+    <time.h>
+
+5. Compilation and execution instructions
+    Open the terminal in the folder 
+    -> type "make start" 
+    -> type "./ start"
+    then follow the printed game instructions, we can play the game.
+    
+    
+    
