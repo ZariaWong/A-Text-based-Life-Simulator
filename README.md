@@ -43,6 +43,8 @@
     
     Watching TV (Curiosity += 10, Academic_performance += 5-10)
     
+    if academic_performance<-10, "Playing_computer" and "Watching_TV" can not be chosed.
+    
     -Phase 3 Junior High School & High School (12 years old - 18 years old) 
 
     [One action/year]
@@ -77,7 +79,7 @@
 
     -Phase 5 (22 years old-）
 
-    Ga(Career)
+    After graduation(Career)
 
     If Academic performance >= 200 && intelligence >= 60 -> Ph.D
 
