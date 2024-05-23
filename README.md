@@ -1,12 +1,10 @@
-# Proposal
+Contributors:
 
-1. Team members:
+    Wong Zee Meng 
 
-    Wong Zee Meng 3035787188
+    Deng Wanting
 
-    Deng Wanting 3035637888
-
-2. A description of your game and introduce the game rules.
+A description of your game and introduce the game rules.
 
     (1). Description:
 
