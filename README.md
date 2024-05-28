@@ -170,14 +170,14 @@
 
     -(2) Changes in value will be recorded in data structure
 
-4. non-standard C/C++ libraries
+# non-standard C/C++ libraries
 
     To construct a ramdom function, we include :
     <stdio.h>
     <stdlib.h>
     <time.h>
 
-5. Compilation and execution instructions
+# Compilation and execution instructions
     Open the terminal in the folder 
     -> type "make start" 
     -> type "./ start"
