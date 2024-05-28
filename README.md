@@ -1,24 +1,22 @@
-Contributors:
+# Contributors
 
     Wong Zee Meng 
 
     Deng Wanting
 
-A description of your game and introduce the game rules.
 
-    (1). Description:
+# Description
 
     Our project is going to implement a Life Simulation. In this game, players can determine the role’s life by making choices. From family to career, from entertainment to life long learning, players can live a unique life in every turn.
 
-    (2). Game rule:
+
+# Game rule:
 
     -Phase 0: Players can choose the name and gender for the role {we could generate two pictures for each gender so players can choose the outlook}
 
     -Phase 1 Baby (0 years old-6 years old)
 
-    Players may have these series of actions
-
-    [One action/year]
+    Players may have these series of actions[One action/year]
 
     Playing with other children (social skills += 5-10)
 
@@ -54,6 +52,7 @@ A description of your game and introduce the game rules.
     Writing (Artistic sense += 10)
 
     Playing with classmates (social skills += 5-10)
+
 
     -Phase 4(18 years old - 22 years old) 
 
@@ -137,7 +136,7 @@ A description of your game and introduce the game rules.
     i.e.Values will be turned into text based achievements
 
 
-3. Features:
+# Features:
 
     Appearance of the role
 
